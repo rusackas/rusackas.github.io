@@ -4,6 +4,10 @@
 /* ============================================================
   SECTIONS
 ============================================================ */
+section *{
+  z-index:2;
+  position: relative;
+}
 section.module:last-child {
   margin-bottom: 0;
 }
@@ -22,7 +26,7 @@ section.module p:last-child {
 }
 section.module.content {
   padding: 40px 0;
-  background:url('/img/patterns/crossword.png');
+  background:url('../img/patterns/crossword.png');
   box-shadow:0px 20px 20px rgba(0,0,0,.25);
   z-index:2;
   position: relative;
@@ -103,7 +107,7 @@ section.module.parallax-4 {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid-column;
-  background:url('/img/arrow_right.png') no-repeat 10px 17px;
+  background:url('../img/arrow_right.png') no-repeat 10px 17px;
   background-size: 6px 13px;
   -webkit-transition: all .2s;
   transition: all .5s;
@@ -188,3 +192,48 @@ section.module.parallax-4 {
   opacity: 1;
 }
 
+
+/* ============================================================
+  HORIZONTAL BG SCROLLER
+============================================================ */
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon
+{
+  z-index: 1;
+  width: 3000px;
+  height:100%;
+  background: url('../img/horiz_parallax/horizon.png');
+  opacity:.2;
+}
+
+.middle
+{
+  z-index: 1;
+  width: 4000px;
+  height:100%;
+  background: url('../img/horiz_parallax/middle.png');
+  opacity:.2;
+}
+
+.front
+{
+  z-index: 1;
+  width: 6000px;
+  height:100%;
+  background: url('../img/horiz_parallax/front.png');
+  opacity:.2;
+}

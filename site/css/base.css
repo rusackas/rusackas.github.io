@@ -189,7 +189,7 @@ header .social a:hover {
 ============================================================ */
 footer {
   padding: 20px 0;
-  background: url(/img/patterns/vertical_cloth.png);
+  background: url(../img/patterns/vertical_cloth.png);
 }
 footer .asides {
   margin-bottom: 20px;
