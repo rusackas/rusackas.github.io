@@ -1,0 +1,277 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1219" measuredH="2458" mockupW="1024" mockupH="2421">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="195" y="37" w="1024" h="2421" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Evan%20Rusackas%0Ahttp%3A//rusackas.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="195" y="109" w="1024" h="247" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="515" y="191" w="384" h="-1" measuredW="282" measuredH="48" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>40</size>
+        <text>Evan%20Rusackas</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Paragraph" x="486" y="375" w="640" h="209" measuredW="275" measuredH="80" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Mention%20DEFINITION.%20%0ATo%20design%2C%20implement%2C%20and%20improve%20web/application/mobile%20interfaces%2C%20making%20the%20experience%20both%20intuitive%20and%20memorable%20for%20end%20users.%20To%20take%20advantage%20of%20the%20new%20and%20exciting%20technologies%20and%20practices%20to%20make%20the%20processes%20of%20design%2C%20development%2C%20and%20testing%20all%20integrate%20smoothly.%20To%20work%20with%20a%20team%20of%20like-minded%20designers%2C%20developers%2C%20and%20content%20creators%20in%20a%20challenging%20and%20creative%20environment.%20To%20take%20on%20a%20role%20that%20caters%20to%20my%20interests%2C%20skills%2C%20and%20experiences%20both%20professionally%20and%20personally.%20To%20find%20unique%20and%20creative%20solutions%20to%20design%20and%20interface%20issues%20using%20the%20latest%20tools%2C%20techniques%2C%20and%20design%20patterns.%20To%20design%20and%20build%20interfaces%20look%2C%20act%2C%20and%20feel%20like%20home.%0A%20%0AOther%20interests%3A%0A%20%0ABeer%2C%20etc.</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="264" y="377" w="199" h="-1" measuredW="146" measuredH="36" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>About%20Evan</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Canvas" x="195" y="596" w="1024" h="309" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Label" x="558" y="920" w="344" h="-1" measuredW="236" measuredH="48" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>40</size>
+        <text>Recent%20Work</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Image" x="420" y="635" w="114" h="117" measuredW="77" measuredH="79" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>design</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Image" x="659" y="635" w="114" h="117" measuredW="77" measuredH="79" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>build</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Image" x="899" y="635" w="114" h="117" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>deploy</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Paragraph" x="391" y="767" w="173" h="80" measuredW="275" measuredH="80" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>UI%2C%20UX%2C%20wireframing%2C%20illustratior/PSD%2C%20design%2C%20typography%2C%20user%20testing%2C%20etc.</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Paragraph" x="630" y="767" w="173" h="80" measuredW="275" measuredH="80" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>CSS%283%29%2C%20HTML%20%285%29%2C%20JS%2C%20Jquery%2C%20Etc.%20Tools%20like%20GitHub/SVN%2C%20Brackets%2C%20CodeKit%2C%20etc</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Paragraph" x="870" y="767" w="173" h="80" measuredW="275" measuredH="80" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Design%20for%20web%2C%20mobile%2C%20responsive%20design%2C%20print%20adaptation%2C%20interactive%20kiosks%2C%20and%20more</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Canvas" x="195" y="1346" w="1024" h="309" measuredW="100" measuredH="70" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::List" x="276" y="1051" w="253" h="255" measuredW="100" measuredH="573" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Grass%20Valley%20%28grassvalley.com%29%0ACustom%20enterprise-scale%20content%20management%20system%20interface%20design%20and%20development%0ADesign%20and%20implementation%20of%20global%20website%20themes%2C%20for%20three%20generations%20of%20site%20design%0AUI%20and%20theme%20design%20for%20various%20portals%2C%20forums%2C%20etc.%0AMobile%20web%20/%20responsive%20design%20for%20tradeshow%20presentation%20/%20sales%20apps%0A%20%0ABeer%20Citizen%20%28beercitizen.com%29%0AUI%20design%20/%20styling%20for%20website%0AUI%20design%20for%20mobile%20web%0AUI%20design%20for%20iOS%20/%20Android%20apps%0ABlog%20design%20and%20templating%0AShopify%20store%20UI%20design%20/%20template%0AHTML%20email%20design%0ADesign%20of%20marketing%20materials%20and%20collateral%20goods%0ACengage%20Learning%0AUI%20design%20of%20interactive%20HTML5%20instructional%20activities%0A%20%0AStanford%20University%0AImplementation%20of%20UI%20for%20iPad-based%20cartographic%20museum%20exhibition%0AUI%20design%20of%20corresponding%20website%0A%20%0ALinkTV%20/%20KCETLink%20%28linktv.org%29%0AUI%20design%20/%20buildout%20of%20custom%20content%20management%20system%20%0AUI%20design%20for%20front-end%20/%20back-end%20of%20Link%20TV%20Platform%20%28open%20source%20semantic%20web%20driven%20video%20portal%29%0AViewchange.org%20UI%20development%0AExplore.org%20website%20interface%20design%20and%20implementation%0ADesign%2C%20development%2C%20and%20theming%20of%20several%20sub-sites%2C%20web%20portals%2C%20and%20site%20templates</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::Image" x="307" y="983" w="171" h="79" measuredW="77" measuredH="79" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo%20above%20each%20list</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::List" x="617" y="1051" w="253" h="255" measuredW="100" measuredH="447" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Beer%20Citizen%20%28beercitizen.com%29%0AUI%20design%20/%20styling%20for%20website%0AUI%20design%20for%20mobile%20web%0AUI%20design%20for%20iOS%20/%20Android%20apps%0ABlog%20design%20and%20templating%0AShopify%20store%20UI%20design%20/%20template%0AHTML%20email%20design%0ADesign%20of%20marketing%20materials%20and%20collateral%20goods%0ACengage%20Learning%0AUI%20design%20of%20interactive%20HTML5%20instructional%20activities%0A%20%0AStanford%20University%0AImplementation%20of%20UI%20for%20iPad-based%20cartographic%20museum%20exhibition%0AUI%20design%20of%20corresponding%20website%0A%20%0ALinkTV%20/%20KCETLink%20%28linktv.org%29%0AUI%20design%20/%20buildout%20of%20custom%20content%20management%20system%20%0AUI%20design%20for%20front-end%20/%20back-end%20of%20Link%20TV%20Platform%20%28open%20source%20semantic%20web%20driven%20video%20portal%29%0AViewchange.org%20UI%20development%0AExplore.org%20website%20interface%20design%20and%20implementation%0ADesign%2C%20development%2C%20and%20theming%20of%20several%20sub-sites%2C%20web%20portals%2C%20and%20site%20templates</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Image" x="646" y="983" w="171" h="79" measuredW="77" measuredH="79" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo%20above%20each%20list</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Label" x="581" y="1374" w="293" h="-1" measuredW="215" measuredH="48" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>40</size>
+        <text>Case%20Study</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Canvas" x="342" y="1437" w="390" h="181" measuredW="100" measuredH="70" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Paragraph" x="783" y="1437" w="359" h="180" measuredW="275" measuredH="80" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipisicing%20elit%2C%20sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%20Duis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20Excepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%20i</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Image" x="352" y="1590" w="50" h="56" measuredW="77" measuredH="79" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Image" x="413" y="1590" w="50" h="56" measuredW="77" measuredH="79" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Image" x="478" y="1590" w="50" h="56" measuredW="77" measuredH="79" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Image" x="539" y="1590" w="50" h="56" measuredW="77" measuredH="79" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Image" x="601" y="1590" w="50" h="56" measuredW="77" measuredH="79" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Image" x="662" y="1590" w="50" h="56" measuredW="77" measuredH="79" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::RoundButton" x="326" y="1506" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%3C</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::RoundButton" x="712" y="1506" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%3E</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::List" x="925" y="1051" w="253" h="255" measuredW="100" measuredH="447" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Beer%20Citizen%20%28beercitizen.com%29%0AUI%20design%20/%20styling%20for%20website%0AUI%20design%20for%20mobile%20web%0AUI%20design%20for%20iOS%20/%20Android%20apps%0ABlog%20design%20and%20templating%0AShopify%20store%20UI%20design%20/%20template%0AHTML%20email%20design%0ADesign%20of%20marketing%20materials%20and%20collateral%20goods%0ACengage%20Learning%0AUI%20design%20of%20interactive%20HTML5%20instructional%20activities%0A%20%0AStanford%20University%0AImplementation%20of%20UI%20for%20iPad-based%20cartographic%20museum%20exhibition%0AUI%20design%20of%20corresponding%20website%0A%20%0ALinkTV%20/%20KCETLink%20%28linktv.org%29%0AUI%20design%20/%20buildout%20of%20custom%20content%20management%20system%20%0AUI%20design%20for%20front-end%20/%20back-end%20of%20Link%20TV%20Platform%20%28open%20source%20semantic%20web%20driven%20video%20portal%29%0AViewchange.org%20UI%20development%0AExplore.org%20website%20interface%20design%20and%20implementation%0ADesign%2C%20development%2C%20and%20theming%20of%20several%20sub-sites%2C%20web%20portals%2C%20and%20site%20templates</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Image" x="954" y="983" w="171" h="79" measuredW="77" measuredH="79" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logo%20above%20each%20list</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Label" x="295" y="1682" w="883" h="-1" measuredW="890" measuredH="48" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <size>40</size>
+        <text>Interface%20Design%20Examples%20%28horizontal%20parallax%3F%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Image" x="295" y="1762" w="157" h="161" measuredW="77" measuredH="79" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Canvas" x="195" y="2123" w="1024" h="309" measuredW="100" measuredH="70" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Image" x="295" y="2198" w="119" h="122" measuredW="77" measuredH="79" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>ME%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::ButtonBar" x="914" y="2331" w="-1" h="-1" measuredW="277" measuredH="27" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Facebook%2C%20Twitter%2C%20LinkedIn%2C%20Email</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::RoundButton" x="452" y="2226" w="70" h="66" measuredW="32" measuredH="32" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>resume</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Paragraph" x="914" y="2198" w="-1" h="-1" measuredW="275" measuredH="80" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>right</align>
+        <text>Evan%20Rusackas%0A2948%2020th%20St.%20Apt%20%23101%0ASan%20Francisco%2C%20CA%2094110%0A%20%0A%28415%29359-5422</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Label" x="646" y="1762" w="-1" h="-1" measuredW="74" measuredH="36" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>Client</text>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::Paragraph" x="646" y="1866" w="359" h="79" measuredW="275" measuredH="80" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipisicing%20elit%2C%20sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%20Duis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20Excepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.%20i</text>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Label" x="646" y="1802" w="-1" h="-1" measuredW="212" measuredH="26" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Project%20Name/Description</text>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Image" x="373" y="1832" w="157" h="161" measuredW="77" measuredH="79" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Image" x="463" y="1762" w="157" h="161" measuredW="77" measuredH="79" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::RoundButton" x="242" y="1876" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%3C</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::RoundButton" x="1146" y="1876" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="44" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%3E</text>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Label" x="893" y="2084" w="-1" h="-1" measuredW="317" measuredH="20" zOrder="45" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <size>12</size>
+        <text>if%20horizontal%20parallax%2C%20use%20iceland%20pano%2C%20put%20photo%20info%20here.</text>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::Image" x="295" y="2319" w="119" h="39" measuredW="77" measuredH="79" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>signature</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::Label" x="1058" y="321" w="-1" h="-1" measuredW="138" measuredH="20" zOrder="47" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <size>12</size>
+        <text>BG%3A%20Furry%20leather%20emboss</text>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Label" x="1058" y="558" w="-1" h="-1" measuredW="143" measuredH="20" zOrder="48" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <size>12</size>
+        <text>translucent%20over%20above%20bg</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Label" x="858" y="862" w="-1" h="-1" measuredW="346" measuredH="20" zOrder="49" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13421772</color>
+        <size>12</size>
+        <text>colorful%20bg%2C%20white%20translucent%20icons%20w/%20sweet%20hover%20CSS3%20tricks</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
