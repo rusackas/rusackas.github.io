@@ -45,6 +45,13 @@ section.module.parallax h1 {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left:0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+section.module.parallax h1.offlow {
+  left:-6000px;
 }
 section.module.parallax-1 {
   background-image: url("../img/backgrounds/iceland1.jpg");
@@ -123,12 +130,14 @@ section.module.parallax-4 {
   -webkit-transform: translate3d(0,0,0);  
   transform: translate3d(0,0,0);
   border-radius: 5px;
-
 }
 .about li:hover{
   background-color:rgba(255,255,255,.6);
   box-shadow: 0px 0px 20px #ddd;
   color:#333;
+}
+.about li.offscreen{
+  opacity:.3;
 }
 .skills{
   color: #fff; 
@@ -155,23 +164,27 @@ section.module.parallax-4 {
   text-align: center;
   width: 30%;
   background: rgba(0,0,0,.4);
-  -webkit-transition: all .3s;
-  transition: all .3s;
   padding-top:20px;
   -webkit-transform: scale(1) rotateX(20deg);
   transform: scale(1) rotateX(20deg);
   box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+
 }
 .skill:hover{
   background: rgba(0,0,0,.7);
   -webkit-transform: scale(1.3) rotateX(0deg);
   transform: scale(1.3) rotateX(0deg);
   box-shadow: 10px 100px 200px rgba(0,0,0,.5);
+    -webkit-transition: all .3s;
+  transition: all .3s;
+
 }
-.skill.offscreen{
-    -webkit-transform: scale(.7) rotateX(70deg);
-    transform: scale(.7) rotateX(70deg);
-    opacity:0;
+.skill.offlow{
+  -webkit-transform: scale(.7) rotateX(70deg);
+  transform: scale(.7) rotateX(70deg);
+  opacity:0;
 }
 
 .skilliconshadow {

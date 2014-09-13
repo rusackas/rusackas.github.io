@@ -15,18 +15,7 @@ $(function() {
       'filter':'blur('+blur+'px)'
     });
     
-    //keep track of whats onscreen
-    $('body *').each(function(){
-      var $this = $(this);
-      if(isScrolledIntoView($this)){
-        $this.addClass('onscreen');
-        $this.removeClass('offscreen');
-      }
-      else{
-        $this.addClass('offscreen');
-        $this.removeClass('onscreen');
-      }
-    });
+    updateScrollStatuses();
     
   });
 
@@ -48,17 +37,34 @@ $(function() {
     $('.colorbacker').css({'background-color':'rgb(255,255,255)'});
   });
   
+  updateScrollStatuses();
   
 });
 
+function updateScrollStatuses(){
+  //keep track of whats onscreen
+  $('body *').each(function(){
+      var $this = $(this);
+      
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
 
-function isScrolledIntoView(elem)
-{
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+      var elemTop = $this.offset().top;
+      var elemBottom = elemTop + $this.height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+      
+      if((elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
+        $this.addClass('onscreen');
+        $this.removeClass('offscreen');
+      }
+      else{
+        $this.addClass('offscreen');
+        $this.removeClass('onscreen');
+      }
+      if(elemBottom > docViewBottom) $this.addClass('offlow');
+      else $this.removeClass('offlow');
+      if(elemTop < docViewTop) $this.addClass('offhigh');
+      else $this.removeClass('offhigh');
+    });
 }
+
