@@ -49,9 +49,16 @@ section.module.parallax h1 {
   left:0;
   -webkit-transition: all .5s;
   transition: all .5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 section.module.parallax h1.offlow {
-  left:-6000px;
+  /*  left:-6000px;*/
+  -webkit-transform: scale(.7) rotateX(90deg);
+  transform: scale(.7) rotateX(90deg);
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  opacity: 0;
 }
 section.module.parallax-1 {
   background-image: url("../img/backgrounds/iceland1.jpg");
