@@ -11,22 +11,23 @@
 }
 
 .sp-content {
-    background: #7d7f72 url(../img/slideshow/grid.png) repeat scroll 0 0;
+    background: #7d7f72 url('../img/horiz_parallax/horizon.png') repeat scroll 0 0;
 	position: relative;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+    background-size: 10%;
 }
 
 .sp-parallax-bg {
-    background: url(../img/slideshow/map.png) repeat-x scroll 0 0;
-    background-size: cover;
+    background: url('../img/horiz_parallax/middle.png') repeat scroll 0 0;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+    background-size: 15%;
 }
 
 .sp-slideshow input {
@@ -245,4 +246,18 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 }
 @media screen and (max-width: 320px){
 	.sp-slideshow { height: 158px; }
+}
+.slider-text, .slider-pics{
+  width:50%;
+  float:left;
+  height:100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:20px;
+}
+.slider-text{
+  text-align: left;
+}
+.slider-pics{
+
 }
