@@ -29,12 +29,13 @@ $(function() {
   });
   
   //about li hovers
-  var colorArray = new Array( "rgb(255,0,0)", "rgb(0,255,0)", "rgb(0,0,255)", "rgb(255,255,0)", "rgb(0,255,255)", "rgb(255,0,255)" );
+  var colorArray = new Array( "#97A68D", "#BEBF93", "#A68E46", "#594022", "#6B8250", "#2A6170" );
+  colorArray.sort(function() { return 0.5 - Math.random() });
   $('.about li').mouseover(function(){
     console.log('hover');
     $('.colorbacker').css({'background-color':colorArray[$(this).index()]});
   }).mouseout(function(){
-    $('.colorbacker').css({'background-color':'rgb(255,255,255)'});
+    $('.colorbacker').css({'background-color':'#ffffff'});
   });
   
   updateScrollStatuses();
