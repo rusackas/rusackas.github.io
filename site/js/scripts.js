@@ -1,5 +1,11 @@
 $(function() {
+  //pre-select nodes
+  var logoshadow = $('#logoshadow');
+  var headerbar = $('#headerbar')
+  
   $( window ).scroll(function() {
+    
+    //
     var scrolltop = $( window ).scrollTop();
     var opacity = 100;
     var blur = 0;
@@ -8,13 +14,18 @@ $(function() {
       blur = scrolltop/30;
     }
     else opacity=0;
-    $('#logoshadow').css({
+    logoshadow.css({
       'top':(scrolltop/5)+20,
       'opacity':opacity,
       '-webkit-filter':'blur('+blur+'px)',
       'filter':'blur('+blur+'px)'
     });
     
+    //lock header to top
+    if(scrolltop >= 410) headerbar.addClass('fixed');
+    else headerbar.removeClass('fixed');
+    
+    //set oncreen/offscreen classes
     updateScrollStatuses();
     
   });

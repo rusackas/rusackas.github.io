@@ -96,6 +96,7 @@ main {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
+  position:relative;
 }
 
 /* ============================================================
@@ -262,15 +263,16 @@ a {
 a:hover {
   color: #818181;
 }
+i{
+  font-style:italic;
+}
+b{
+  font-weight:bold;
+}
 
 /* ============================================================
-  TRANSITION & HARDWARE ACCELARATE EVERYTHING
+  HARDWARE ACCELARATE ALL THE THINGS!!!! (OK, SOME)
 ============================================================ */
-
-*{
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
 
 /* ============================================================
   START LAYOUT BITS...
@@ -343,6 +345,34 @@ section.module.parallax h1.offlow {
 section.module.parallax-1 {
   background-image: url("../img/backgrounds/iceland1.jpg");
   height:700px;
+}
+#headerbar{
+  position: absolute;
+  background: rgba(0,0,0,0);
+  top:0;left:0;bottom:0;right:0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.parallax-1.onscreen #headerbar{
+  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.7);
+}
+#headerbar.fixed{
+  position: fixed;
+  background: rgba(0,0,0,.7);
+  height:100px;
+  z-index:10;
+}
+#headerbar .container{
+  -webkit-transition: left .5s;
+  transition: left .5s;
+  left:0px;
+}
+#headerbar.fixed .container{
+  margin-top: -410px;
+  left:270px;
 }
 section.module.parallax-2 {
   background-image: url("../img/backgrounds/ireland1.jpg");
@@ -428,11 +458,9 @@ section.module.parallax-4 {
 }
 .skills{
   color: #fff; 
-  display: -webkit-box; 
   display: -webkit-flex; 
   display: -ms-flexbox; 
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -461,8 +489,8 @@ section.module.parallax-4 {
   width: 30%;
   background: rgba(0,0,0,.4);
   padding-top:20px;
-  -webkit-transform: scale(1) rotateX(20deg);
-  transform: scale(1) rotateX(20deg);
+  -webkit-transform: scale(1) rotateX(12deg);
+  transform: scale(1) rotateX(12deg);
   box-shadow: 10px 10px 20px rgba(0,0,0,.5);
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -470,18 +498,20 @@ section.module.parallax-4 {
 }
 .skill:hover{
   background: rgba(0,0,0,.7);
-  -webkit-transform: scale(1.3) rotateX(0deg);
-  transform: scale(1.3) rotateX(0deg);
+  -webkit-transform: scale(1.2) rotateX(0deg);
+  transform: scale(1.2) rotateX(0deg);
   box-shadow: 10px 100px 200px rgba(0,0,0,.5);
     -webkit-transition: all .3s;
   transition: all .3s;
 
 }
+/*
 .skill.offlow{
   -webkit-transform: scale(.7) rotateX(70deg);
   transform: scale(.7) rotateX(70deg);
   opacity:0.1;
 }
+*/
 .skill li.offlow{
   opacity: .2;
 }
@@ -541,6 +571,8 @@ section.module.parallax-4 {
   position: fixed;
   bottom: 0;
   left: 0;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /**
