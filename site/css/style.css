@@ -366,13 +366,16 @@ section.module.parallax-1 {
   z-index:10;
 }
 #headerbar .container{
-  -webkit-transition: left .5s;
-  transition: left .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
   left:0px;
 }
 #headerbar.fixed .container{
   margin-top: -410px;
-  left:270px;
+  left:280px;
+  -webkit-transform: scale(.6) translateY(305px);
+  -ms-transform: scale(.6) translateY(305px);
+  transform: scale(.6) translateY(305px);
 }
 section.module.parallax-2 {
   background-image: url("../img/backgrounds/ireland1.jpg");
@@ -602,3 +605,8 @@ section.module.parallax-4 {
   height:100%;
   background: url('../img/horiz_parallax/front.png');
 }
+
+/* ============================================================
+  COVERFLOW ADD-ONS
+============================================================ */
+

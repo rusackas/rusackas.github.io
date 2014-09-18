@@ -12,14 +12,16 @@
   <!-- css -->
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/coverflow.css">
+
 
   <!-- js -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/modernizr/modernizr.js"></script>
   <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+  <script src="js/coverflow.js"></script>
   <script src="js/scripts.js"></script>
 
 </head>
@@ -140,11 +142,47 @@
 				<div class="sp-content">
 					<div class="sp-parallax-bg"></div>
 					<ul class="sp-slider clearfix">
-						<li><div class="slider-pics"></div><div class="slider-text">Link TV</div></li>
-						<li><div class="slider-pics"></div><div class="slider-text">Cengage</div></li>
-						<li><div class="slider-pics"></div><div class="slider-text">MI Media</div></li>
-						<li><div class="slider-pics"></div><div class="slider-text">Stanford</div></li>
-						<li><div class="slider-pics"></div><div class="slider-text">KareCo Pharmagel</div></li>
+                      <li>
+                        <div class="slider-pics"></div>
+                        <div class="slider-text">
+                          <h3>Link TV websites and CMS system</h3>
+                          <ul>
+                            <li>UI design / buildout of custom content management system</li>
+                            <li>UI design for front-end / back-end of Link TV Platform (open source semantic web driven video portal)</li>
+                            <li>Viewchange.org UI development</li>
+                            <li>Explore.org website interface design and implementation</li>
+                            <li>Design, development, and theming of several sub-sites, web portals, and site templates</li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="slider-pics"></div>
+                        <div class="slider-text">
+                          <h3>Cengage</h3>
+                          UI design of interactive HTML5 instructional activities
+                        </div>
+                      </li>
+                      <li>
+                        <div class="slider-pics"></div>
+                        <div class="slider-text">
+                          <h3>MI Media</h3>
+                          Art direction and design for Bassics Magazine, Fingerstyle Guitar Magazine, and StickIt!, along with design and production of marketing and collatteral materials
+                        </div>
+                      </li>
+                      <li>
+                        <div class="slider-pics"></div>
+                        <div class="slider-text">
+                          <h3>Stanford University</h3>
+                          Implementation of UI for iPad-based cartographic museum exhibition. UI design and buildout of corresponding website. Built with HTML5, jQuery, and responsive design.
+                        </div>
+                      </li>
+                      <li>
+                        <div class="slider-pics"></div>
+                        <div class="slider-text">
+                          <h3>KareCo /Pharmagel</h3>
+                          Design and implementation of custm Shopify storefront, custom CMS system, and HTML emails.
+                        </div>
+                      </li>
 					</ul>
 				</div><!-- sp-content -->
 				
@@ -155,7 +193,7 @@
       <section class="module parallax parallax-3">
         <div class="container">
           <h1>Case Study: Grass Valley</h1>
-          Slideshow here, sucka.
+          <div id="player"></div>
         </div>
       </section>
       <section class="module parallax parallax-4">
