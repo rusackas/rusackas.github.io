@@ -1,6 +1,8 @@
 $(function () {
   //pre-select nodes
-  var logoshadow = $('#logoshadow'), headerbar = $('#headerbar');
+  'use strict';
+  var logoshadow = $('#logoshadow'),
+    headerbar = $('#headerbar');
   
   $(window).scroll(function () {
     
@@ -63,6 +65,7 @@ $(function () {
 
 function updateScrollStatuses() {
   //keep track of whats onscreen
+  'use strict';
   $('body *').each(function () {
     var $this = $(this),
       docViewTop = $(window).scrollTop(),
