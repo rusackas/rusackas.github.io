@@ -1,7 +1,7 @@
 $(function () {
   //pre-select nodes
   'use strict';
-  var headerbar = $('#headerbar'), headerlogo_bottom = $('#headerlogo_bottom');
+  var headerbar = $('#headerbar'), headerlogo_bottom = $('#headerlogo_bottom'), currentTopSection;
   
   $(window).scroll(function () {
     
@@ -24,6 +24,10 @@ $(function () {
     //set oncreen/offscreen classes
     updateScrollStatuses();
     
+    //update nav to highlight highest current onscreen item
+    currentTopSection = $('section.offhigh:last').next('section').attr('id');
+    console.log(currentTopSection);
+    $('#nav_'+currentTopSection).addClass('active').siblings().removeClass('active');
   });
 
   //horiz scrolling hexes
@@ -65,6 +69,15 @@ $(function () {
     coverwidth: 500
   });
   
+  //init nav dots
+  var navHTML = '', sectionID;
+  $('section').each(function(){
+    sectionID = $(this).attr('id')
+    //console.log('section found');
+    navHTML += '<a href="#' + sectionID + '" id="nav_' + sectionID + '"></a>';
+  });
+  //navHTML += '<a href="#footer"></a>'
+  $('#nav_dots').html(navHTML);
 });
 
 function updateScrollStatuses() {
