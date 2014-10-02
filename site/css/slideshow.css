@@ -247,13 +247,21 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 @media screen and (max-width: 320px){
 	.sp-slideshow { height: 158px; }
 }
+.slider-text{
+  width:30%;
+}
+.slider-pics{
+  width:70%;
+}
 .slider-text, .slider-pics{
-  width:50%;
   float:left;
   height:100%;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding:20px;
+}
+.slider-pics li{
+  display: inline-block;
 }
 .slider-text{
   text-align: left;

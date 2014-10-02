@@ -199,6 +199,8 @@ footer {
   padding: 20px 0;
   background: url(../img/patterns/vertical_cloth.png);
   color:white;
+  z-index: 10;
+  position: relative;
 }
 footer .asides {
   margin-bottom: 20px;
@@ -206,27 +208,42 @@ footer .asides {
 footer aside {
   margin-bottom: 10px;
   line-height:21px;
+  position: relative;
 }
-footer nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+footer aside:last-child{
   text-align: center;
 }
-footer nav li {
+footer .file img {
+  -webkit-transition: all .5s;
+  transition: all .5s;
   display: inline-block;
+  position: relative;
 }
-footer nav a {
-  display: block;
-  margin: 0 5px;
-  color: #fff;
-}
-footer .logo {
-  text-align: center;
-}
-footer .logo img {
+footer .file .download{
+  background-color:black;
+  background-color: rgba(0,0,0,.7);
+  color:white;
+  position: absolute;
   display: inline-block;
-  vertical-align: middle;
+  height:30px;
+  line-height: 30px;
+  border-radius: 30px;
+  top:60px;
+  left:50%;
+  margin-left:-75px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width:150px;
+}
+footer .file:hover img {
+  -webkit-transform: scale(1.5) rotateZ(5deg);
+  transform: scale(1.5) rotateZ(5deg);
+}
+footer .file:hover .download{
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  box-shadow: 3px 3px 10px #333;
 }
 footer .copyright {
   text-align: center;
@@ -405,10 +422,13 @@ section.module.parallax-1 {
   background-color:rgba(255,255,255,.5);
 }
 #nav_dots a.active{
+/*
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
+*/
   background-color:white;
+  cursor: default;
 }
 #nameplate{
   left:30px;
