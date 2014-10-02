@@ -80,6 +80,11 @@ $(function () {
   $('#nav_dots').html(navHTML);
   //nav dot tipsys
   $('#nav_dots a').tipsy({fade: true, gravity: $.fn.tipsy.autoNS});
+  
+  //init colorboxes
+  $(".group1").colorbox({rel:'group1'});
+
+  
 });
 
 function updateScrollStatuses() {
