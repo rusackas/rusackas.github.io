@@ -58,15 +58,17 @@ $(function () {
     width: 960,
     height: 360,
     backgroundopacity: 0,
-    coverwidth: 500
+    coverwidth: 500,
+    mousewheel: false
   });
   coverflow('player2').setup({
     flash: 'coverflow.swf',
-    playlist: 'playlist.json',
+    playlist: 'playlist2.json',
     width: 960,
     height: 360,
     backgroundopacity: 0,
-    coverwidth: 500
+    coverwidth: 500,
+    mousewheel: false
   });
   
   //init nav dots
