@@ -49,3 +49,36 @@
 .coverflow-text h1,
 .coverflow-text h2 {
   margin: 0; }
+
+/*buttons*/
+.coverflow_button{
+  background-color: rgba(255,255,255,.8);
+  border:2px solid white;
+  height:60px;
+  width:60px;
+  border-radius: 60px;
+  color:black;
+  text-transform: uppercase;
+  position: absolute;
+  bottom:200px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  z-index: 20;
+  box-shadow: 3px 3px 10px #333;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  outline: none;
+}
+.coverflow_left{
+  left:0px;
+}
+.coverflow_right{
+  right:0px;
+}
+.coverflow_button:hover{
+  box-shadow: 3px 3px 20px #000;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
