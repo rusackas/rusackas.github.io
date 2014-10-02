@@ -26,7 +26,7 @@ $(function () {
     
     //update nav to highlight highest current onscreen item
     currentTopSection = $('section.offhigh:last').next('section').attr('id');
-    console.log(currentTopSection);
+    //console.log(currentTopSection);
     $('#nav_'+currentTopSection).addClass('active').siblings().removeClass('active');
   });
 
@@ -72,12 +72,14 @@ $(function () {
   //init nav dots
   var navHTML = '', sectionID;
   $('section').each(function(){
-    sectionID = $(this).attr('id')
+    sectionID = $(this).attr('id');
     //console.log('section found');
-    navHTML += '<a href="#' + sectionID + '" id="nav_' + sectionID + '"></a>';
+    navHTML += '<a href="#' + sectionID + '" id="nav_' + sectionID + '" original-title="' + $(this).attr('data-title') + '"></a>';
   });
   //navHTML += '<a href="#footer"></a>'
   $('#nav_dots').html(navHTML);
+  //nav dot tipsys
+  $('#nav_dots a').tipsy({fade: true, gravity: $.fn.tipsy.autoNS});
 });
 
 function updateScrollStatuses() {

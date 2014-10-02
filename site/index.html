@@ -13,14 +13,16 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bower_components/tipsy/src/stylesheets/tipsy.css" type="text/css" />
   <link rel="stylesheet" href="css/coverflow.css">
+  <link rel="stylesheet" href="css/style.css">
 
-
+  
   <!-- js -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/modernizr/modernizr.js"></script>
   <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+  <script type='text/javascript' src='bower_components/tipsy/src/javascripts/jquery.tipsy.js'></script>
   <script src="js/coverflow.js"></script>
   <script src="js/scripts.js"></script>
 
@@ -39,7 +41,7 @@
   
 <div class="wrapper">
   <main>
-      <section class="module parallax parallax-1" id="section_intro">
+      <section class="module parallax parallax-1" id="section_intro" data-title="Intro">
         <div id="headerbar">
           <div id="nameplate">Evan Rusackas</div>
           <div class="container">
@@ -50,7 +52,7 @@
         </div>
       </section>
 
-      <section class="module content" id="section_mission">
+      <section class="module content" id="section_mission" data-title="Mission">
         <div class="colorbacker"></div>
         <div class="container about">
           <h2>My mission:</h2>
@@ -65,7 +67,7 @@
         </div>
       </section>
 
-      <section class="module parallax parallax-2" id="section_skills">
+      <section class="module parallax parallax-2" id="section_skills" data-title="Skills">
         <h1>The process...</h1>
         <div class="container skills">
           <div class='skill'>
@@ -114,7 +116,7 @@
         </div>
       </section>
 
-      <section class="module content" id="section_recent">
+      <section class="module content" id="section_recent" data-title="Recent Work">
         <div class="container">
           <h2>Recent Projects</h2>
           <div class="sp-slideshow">
@@ -194,22 +196,22 @@
         </div>
       </section>
 
-      <section class="module parallax parallax-3" id="section_case1">
+      <section class="module parallax parallax-3" id="section_case1" data-title="Case Study 1">
         <div class="container">
           <h1>Case Study: Grass Valley</h1>
           <div id="player"></div>
         </div>
       </section>
-      <section class="module parallax parallax-4" id="section_case2">
+      <section class="module parallax parallax-4" id="section_case2" data-title="Case Study 2">
         <div class="container">
           <h1>Case Study: Beer Citizen</h1>
           <div id="player2"></div>
         </div>
       </section>
 
-      <section class="module content" id="section_future">
+      <section class="module content" id="section_future" data-title="Objectives">
         <div class="container">
-          <h2>Ongoing interests...</h2>
+          <h2>Ongoing objectives...</h2>
           <p>
             I'm currently enamored with all the possibilities of CSS3, which combined with growing support in evergreen browsers, is allowing for rapid progress in the design and development of user interfaces, and provdes a TON of opportunitices for icing on top. On the frontier, I'm very excited to work more with Web Components (and related polyfills, like Polymer). I'm also loving the new wave of front-end tools and IDEs on the market like Brackets for code editing, and CodeKit for enabling SCSS, minification and more. Having been designing and building for the web since 1996, I'm continually amazed that while the capabilities and implications of the internet continue to expand, the tools and techniques used in building it are becoming faster and easier, to keep pace. The web is what we make of it, and it's very exciting to be at a point where we can do nearly <i>anything</i>.
           </p>
