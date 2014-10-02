@@ -55,7 +55,14 @@ $(function () {
     height: 360,
     backgroundopacity: 0,
     coverwidth: 500
-      
+  });
+  coverflow('player2').setup({
+    flash: 'coverflow.swf',
+    playlist: 'playlist.json',
+    width: 960,
+    height: 360,
+    backgroundopacity: 0,
+    coverwidth: 500
   });
   
 });
