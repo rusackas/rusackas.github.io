@@ -198,12 +198,14 @@ header .social a:hover {
 footer {
   padding: 20px 0;
   background: url(../img/patterns/vertical_cloth.png);
+  color:white;
 }
 footer .asides {
   margin-bottom: 20px;
 }
 footer aside {
   margin-bottom: 10px;
+  line-height:21px;
 }
 footer nav ul {
   list-style: none;
@@ -433,7 +435,7 @@ section.module.parallax-3 {
   background-image: url("../img/backgrounds/ireland1.jpg");
 }
 section.module.parallax-4 {
-  background-image: url("../img/backgrounds/ireland1.jpg");
+  background-image: url("../img/backgrounds/bc_ipad.jpg");
 }
 
 @media all and (min-width: 600px) {
@@ -648,6 +650,9 @@ section.module.parallax-4 {
   * z-index ordering of the different layers, do this for your layers,
   * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
   */
+.horizon, .middle, .front{
+  opacity: .5;
+}
 .horizon
 {
   z-index: 1;

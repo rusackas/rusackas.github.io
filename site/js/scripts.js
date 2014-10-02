@@ -52,15 +52,15 @@ $(function () {
   updateScrollStatuses();
   
   //init coverflow(s)
-  coverflow('player').setup({
-    flash: 'coverflow.swf',
-    playlist: 'playlist.json',
-    width: 960,
-    height: 360,
-    backgroundopacity: 0,
-    coverwidth: 500,
-    mousewheel: false
-  });
+//  coverflow('player').setup({
+//    flash: 'coverflow.swf',
+//    playlist: 'playlist.json',
+//    width: 960,
+//    height: 360,
+//    backgroundopacity: 0,
+//    coverwidth: 500,
+//    mousewheel: false
+//  });
   coverflow('player2').setup({
     flash: 'coverflow.swf',
     playlist: 'playlist2.json',
@@ -86,6 +86,16 @@ $(function () {
   //init colorboxes
   $(".group1").colorbox({rel:'group1'});
 
+  //place email
+  $('#my-email').html(function(){
+	var e = "evan";
+	var a = "@";
+	var d = "rusackas";
+	var c = ".com";
+	var h = 'mailto:' + e + a + d + c;
+	$(this).parent('a').attr('href', h);
+	return e + a + d + c;
+});
   
 });
 
