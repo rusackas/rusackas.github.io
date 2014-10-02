@@ -1,8 +1,7 @@
 $(function () {
   //pre-select nodes
   'use strict';
-  var logoshadow = $('#logoshadow'),
-    headerbar = $('#headerbar');
+  var headerbar = $('#headerbar'), headerlogo_bottom = $('#headerlogo_bottom');
   
   $(window).scroll(function () {
     
@@ -12,17 +11,15 @@ $(function () {
       opacity = (100 - (scrolltop / 2.5)) / 100;
       blur = scrolltop / 30;
     } else { opacity = 0; }
-    logoshadow.css({
-      'top': (scrolltop / 5) + 20,
-      'opacity' : opacity,
-      '-webkit-filter' : 'blur(' + blur + 'px)',
-      'filter' : 'blur(' + blur + 'px)'
-    });
     
     //lock header to top
-    if (scrolltop >= 410) {
+    if (scrolltop >= 400) {
       headerbar.addClass('fixed');
-    } else { headerbar.removeClass('fixed'); }
+      headerlogo_bottom.addClass('barred');
+    } else { 
+      headerbar.removeClass('fixed'); 
+      headerlogo_bottom.removeClass('barred');
+    }
     
     //set oncreen/offscreen classes
     updateScrollStatuses();

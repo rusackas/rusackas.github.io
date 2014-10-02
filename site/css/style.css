@@ -350,8 +350,9 @@ section.module.parallax-1 {
   position: absolute;
   background: rgba(0,0,0,0);
   top:0;left:0;bottom:0;right:0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+  height:700px;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
@@ -362,20 +363,38 @@ section.module.parallax-1 {
 #headerbar.fixed{
   position: fixed;
   background: rgba(0,0,0,.7);
-  height:100px;
   z-index:10;
+  top:-600px;
+}
+#nav_dots,#nameplate{
+  opacity:0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  position: absolute;
+  color: white;
+  font-size:18px;
+  bottom:-20px;
+}
+#nav_dots{
+  right:30px;
+}
+#nameplate{
+  left:30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+#headerbar.fixed #nameplate{
+  opacity:1;
+  bottom: 40px;
+}
+#headerbar.fixed #nav_dots{
+  opacity:1;
+  bottom: 40px;
 }
 #headerbar .container{
   -webkit-transition: all .5s;
   transition: all .5s;
   left:0px;
-}
-#headerbar.fixed .container{
-  margin-top: -410px;
-  left:280px;
-  -webkit-transform: scale(.6) translateY(305px);
-  -ms-transform: scale(.6) translateY(305px);
-  transform: scale(.6) translateY(305px);
 }
 section.module.parallax-2 {
   background-image: url("../img/backgrounds/ireland1.jpg");
@@ -407,7 +426,7 @@ section.module.parallax-4 {
 /* ============================================================
   CONTENT
 ============================================================ */
-.headerlogo{
+#headerlogo_top{
   display: block;
   position: absolute;
   top:20px;
@@ -418,8 +437,25 @@ section.module.parallax-4 {
   filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
 */
 }
-#logoshadow{
-  top:20px;
+#headerlogo_bottom{
+  display: block;
+  position: absolute;
+  top:400px;
+  left:50%;
+  margin-left: -270px;
+  z-index: 11;
+  -webkit-transition: -webkit-transform .5s;
+  transition: transform .5s;
+/*
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
+*/
+}
+#headerlogo_bottom.barred{
+  top:590px;
+  -webkit-transform: scale(.6);
+  -ms-transform: scale(.6);
+  transform: scale(.6);
 }
 .colorbacker{
   background-color:rgba(0,0,0,.0);
