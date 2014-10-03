@@ -348,7 +348,7 @@ section.module.parallax {
 }
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -359,6 +359,10 @@ section.module.parallax h1 {
   transition: all .5s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+  text-shadow: 3px 3px 20px #000;
+}
+#section_case2 h1{
+  font-size: 32px;
 }
 section.module.parallax h1.offlow {
   /*  left:-6000px;*/
@@ -466,12 +470,12 @@ section.module.parallax-4 {
     font-size: 20px;
   }
   section.module.parallax h1 {
-    font-size: 96px;
+    font-size: 36px;
   }
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
-    font-size: 90px;
+    font-size: 48px;
   }
 }
 
@@ -484,6 +488,8 @@ section.module.parallax-4 {
   top:20px;
   left:50%;
   margin-left: -270px;
+  -webkit-filter: drop-shadow(3px 3px 10px rgba(0,0,0,.4));
+  filter: drop-shadow(3px 3px 10px rgba(0,0,0,.4));
 /*
   -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
   filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
@@ -498,6 +504,8 @@ section.module.parallax-4 {
   z-index: 11;
   -webkit-transition: -webkit-transform .5s;
   transition: transform .5s;
+  -webkit-filter: drop-shadow(3px 3px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(3px 3px 5px rgba(0,0,0,.5));
 /*
   -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
   filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
@@ -508,6 +516,8 @@ section.module.parallax-4 {
   -webkit-transform: scale(.6);
   -ms-transform: scale(.6);
   transform: scale(.6);
+  -webkit-filter: drop-shadow(3px 3px 5px rgba(0,0,0,0));
+  filter: drop-shadow(3px 3px 5px rgba(0,0,0,0));
 }
 .colorbacker{
   background-color:rgba(0,0,0,.0);
@@ -700,7 +710,39 @@ section.module.parallax-4 {
 /* ============================================================
   COVERFLOW ADD-ONS
 ============================================================ */
-
+.coverflow{
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.coverflow-wrap{
+  margin-bottom:40px; 
+}
+.coverflow-text{
+  background-color:rgba(0,0,0,.7);
+  height:200px;
+  padding:20px;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}
+.coverflow-text.onscreen{
+  background-color:rgba(0,0,0,.7);
+  height:180px;
+  padding:20px;
+  opacity: 1;
+  -webkit-transform: rotateX(12deg);
+  transform: rotateX(12deg);
+}
+section.module .coverflow-text h2{
+  
+}
+section.module .coverflow-text h3{
+  
+}
 
 /* ============================================================
   BOWER COMPONENT OVERRIDES

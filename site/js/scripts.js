@@ -65,7 +65,7 @@ $(function () {
     flash: 'coverflow.swf',
     playlist: 'playlist2.json',
     width: 960,
-    height: 360,
+    height: 420,
     backgroundopacity: 0,
     coverwidth: 500,
     mousewheel: false

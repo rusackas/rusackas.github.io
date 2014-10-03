@@ -406,7 +406,7 @@
         function g(b) {
             if (r.showtext === !0) {
                 var c = k[b];
-                c && (m.innerHTML = "<h1>" + (void 0 === c.title ? "" : c.title) + "</h1><h2>" + (void 0 === c.description ? "" : c.description) + "</h2>")
+                c && (m.innerHTML = "<h2>" + (void 0 === c.title ? "" : c.title) + "</h2><h3>" + (void 0 === c.description ? "" : c.description) + "</h3>")
             }
             a.trigger("focus", b, k[b] ? k[b].link : void 0)
         }
