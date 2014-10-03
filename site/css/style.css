@@ -297,10 +297,6 @@ b{
 }
 
 /* ============================================================
-  HARDWARE ACCELARATE ALL THE THINGS!!!! (OK, SOME)
-============================================================ */
-
-/* ============================================================
   START LAYOUT BITS...
 ============================================================ */
 
@@ -328,6 +324,7 @@ section.module p {
   margin-bottom: 40px;
   font-size: 16px;
   font-weight: 300;
+  line-height: 32px;
 }
 section.module p:last-child {
   margin-bottom: 0;
@@ -376,6 +373,38 @@ section.module.parallax-1 {
   background-image: url("../img/backgrounds/iceland1.jpg");
   height:700px;
 }
+section.module.parallax-2 {
+  background-image: url("../img/backgrounds/ireland1.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../img/backgrounds/ireland1.jpg");
+}
+section.module.parallax-4 {
+  background-image: url("../img/backgrounds/bc_ipad.jpg");
+  height:700px;
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 36px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 48px;
+  }
+}
+
+/* ============================================================
+  HEADER
+============================================================ */
+
 #headerbar{
   position: absolute;
   background: rgba(0,0,0,0);
@@ -452,32 +481,6 @@ section.module.parallax-1 {
   transition: all .5s;
   left:0px;
 }
-section.module.parallax-2 {
-  background-image: url("../img/backgrounds/ireland1.jpg");
-}
-section.module.parallax-3 {
-  background-image: url("../img/backgrounds/ireland1.jpg");
-}
-section.module.parallax-4 {
-  background-image: url("../img/backgrounds/bc_ipad.jpg");
-}
-
-@media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 42px;
-  }
-  section.module p {
-    font-size: 20px;
-  }
-  section.module.parallax h1 {
-    font-size: 36px;
-  }
-}
-@media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 48px;
-  }
-}
 
 /* ============================================================
   CONTENT
@@ -535,6 +538,9 @@ section.module.parallax-4 {
   column-count: 2;
   font-size: 1.1rem;
   overflow: visible;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
 }
 .about li{
   padding:10px 20px 10px 30px;
@@ -548,6 +554,7 @@ section.module.parallax-4 {
   -webkit-transform: translate3d(0,0,0);  
   transform: translate3d(0,0,0);
   border-radius: 5px;
+  line-height: 32px;
 }
 .about li:hover{
   background-color:rgba(255,255,255,.6);
@@ -583,6 +590,7 @@ section.module.parallax-4 {
 }
 .skills li{
   margin-top:10px;
+  line-height: 24px;
 }
 .skill {
   position: relative;
@@ -723,6 +731,7 @@ section.module.parallax-4 {
   background-color:rgba(0,0,0,.7);
   height:200px;
   padding:20px;
+  margin-top:70px;
   opacity: 0;
   -webkit-transition: all 1s;
   transition: all 1s;
