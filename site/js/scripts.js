@@ -84,7 +84,11 @@ $(function () {
   $('#nav_dots a').tipsy({fade: true, gravity: $.fn.tipsy.autoNS});
   
   //init colorboxes
-  $(".group1").colorbox({rel:'group1'});
+  $(".group1").colorbox({rel:'group1',maxHeight:'100%',scalePhotos:'true'});
+  $(".group2").colorbox({rel:'group2',maxHeight:'100%',scalePhotos:'true'});
+  $(".group3").colorbox({rel:'group3',maxHeight:'100%',scalePhotos:'true'});
+  $(".group4").colorbox({rel:'group4',maxHeight:'100%',scalePhotos:'true'});
+  $(".group5").colorbox({rel:'group5',maxHeight:'100%',scalePhotos:'true'});
 
   //place email
   $('#my-email').html(function(){
