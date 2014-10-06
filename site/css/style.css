@@ -577,6 +577,8 @@ section.module.parallax-4 {
   box-shadow: 10px 10px 20px rgba(0,0,0,.5);
   -webkit-transition: all 1s;
   transition: all 1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 
 }
 .skill:hover{

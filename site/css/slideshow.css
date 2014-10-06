@@ -278,9 +278,10 @@ x}
   box-shadow: 3px 3px 10px #333;
   border: 0px;
   padding: 5px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .25s;
+  transition: all .25s;
   margin-right: 10px;
+  transition-timing-function: ease-out;
 }
 .slider-pics li img{
   margin:0 !important;
