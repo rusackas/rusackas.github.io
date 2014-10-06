@@ -72,9 +72,14 @@
 }
 .coverflow_left{
   left:0px;
+  -webkit-animation: throb 2s infinite;
+  animation: throb 2s infinite; /* IE 10+ */
 }
 .coverflow_right{
   right:0px;
+  -webkit-animation: throb 2s infinite;
+  animation: throb 2s infinite; /* IE 10+ */
+
 /*  background:url('../img/slideshow/arrows.png') no-repeat top right;*/
 }
 .coverflow_button:hover{

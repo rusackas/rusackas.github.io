@@ -738,3 +738,15 @@ section.module .coverflow-text h3{
   font-size: 14px;
   margin-top: 5px;
 }
+
+/* ============================================================
+  CSS ANIMATION DEFINITIONS
+============================================================ */
+@-webkit-keyframes throb {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+@keyframes throb {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}

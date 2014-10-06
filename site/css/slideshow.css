@@ -91,6 +91,8 @@
 	background: transparent url('../img/slideshow/arrows.png') no-repeat;
 	-webkit-transition: opacity linear 0.3s;
     transition: opacity linear 0.3s;
+    -webkit-animation: throb 2s infinite;
+    animation: throb 2s infinite; /* IE 10+ */
 }
 .sp-arrow:hover{
 	opacity: 1;
