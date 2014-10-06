@@ -109,88 +109,11 @@ main {
 /* ============================================================
   HEADER & SITE TITLE
 ============================================================ */
-/* header */
-header .branding {
-  padding: 20px 0;
-}
-header .logo {
-  margin-bottom: 20px;
-  text-align: center;
-}
-header .logo img {
-  display: inline-block;
-  vertical-align: middle;
-}
-header .social {
-  text-align: center;
-}
-header .social a {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 5px;
-  width: 30px;
-  height: 30px;
-  color: rgba(0, 0, 0, 0);
-  font-size: 0;
-  text-indent: -9999px;
-  background-size: 30px 30px;
-  background-image: url("../img/core/social-light.png");
-  background-image: url("../img/core/social-light.svg"), none;
-  background-size: 180px 30px;
-}
-header .social a.fb {
-  background-position: 0 0;
-}
-header .social a.twitter {
-  background-position: -30px 0;
-}
-header .social a.googleplus {
-  background-position: -60px 0;
-}
-header .social a.rss {
-  background-position: -90px 0;
-}
-header .social a.email {
-  background-position: -120px 0;
-}
-header .social a.search {
-  background-position: -150px 0;
-}
-header .social a:hover {
-  opacity: 0.4;
-}
+
 
 @media all and (min-width: 600px) {
-  header .branding {
-    padding-left: 60px;
-  }
-  header .logo {
-    margin-bottom: 0;
-    margin-left: -60px;
-    float: left;
-    width: 60px;
-    height: 60px;
-  }
-  header .logo img {
-    display: block;
-    margin: 0;
-  }
-  header .social {
-    padding: 15px 0;
-    float: right;
-    width: 100%;
-    text-align: right;
-  }
 }
-/* site title */
-.site-title {
-  padding: 5px 0;
-  background-color: #818181;
-  text-align: center;
-}
-.site-title h1 {
-  color: #fff;
-}
+
 
 /* ============================================================
   FOOTER
@@ -214,8 +137,8 @@ footer aside:last-child{
   text-align: center;
 }
 footer .file img {
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .25s;
+  transition: all .25s;
   display: inline-block;
   position: relative;
 }
@@ -231,13 +154,13 @@ footer .file .download{
   top:60px;
   left:50%;
   margin-left:-75px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all .7s;
+  transition: all .7s;
   width:150px;
 }
 footer .file:hover img {
-  -webkit-transform: scale(1.5) rotateZ(5deg);
-  transform: scale(1.5) rotateZ(5deg);
+  -webkit-transform: scale(1.3) rotateZ(5deg);
+  transform: scale(1.3) rotateZ(5deg);
 }
 footer .file:hover .download{
   -webkit-transform: scale(1.5);
@@ -254,6 +177,26 @@ footer .copyright small {
 }
 footer .copyright a {
   color: #818181;
+}
+ul.social li{
+  display: inline-block;
+  margin-right:5px;
+}
+ul.social img{
+  opacity: .7;
+  height:40px;
+  width:40px;
+  -webkit-transition: opacity .5s;
+  transition: all .5s;
+  border-radius: 40px;
+}
+ul.social li:hover img{
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0px 3px 10px #000;
+  
 }
 
 @media all and (min-width: 600px) {
@@ -443,8 +386,8 @@ section.module.parallax-4 {
   height: 15px;
   width: 15px;
   border: 2px solid white;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .25s;
+  transition: all .25s;
   border-radius: 15px;
 }
 #nav_dots a:link,#nav_dots a:visited{
@@ -549,8 +492,8 @@ section.module.parallax-4 {
   break-inside: avoid-column;
   background:url('../img/arrow_right.png') no-repeat 10px 17px;
   background-size: 6px 13px;
-  -webkit-transition: all .2s;
-  transition: all .5s;
+  -webkit-transition: all .25s;
+  transition: all .25s;
   -webkit-transform: translate3d(0,0,0);  
   transform: translate3d(0,0,0);
   border-radius: 5px;
@@ -635,7 +578,7 @@ section.module.parallax-4 {
   margin-left:-100px;
   z-index:0;
   border-radius: 100px;
-  -webkit-transition: all .2;
+  -webkit-transition: all .3;
   transition: all .3s;
 }
 .skill:hover .skilliconshadow{
@@ -657,14 +600,12 @@ section.module.parallax-4 {
   top:8px;
   opacity:.4;
   -webkit-transition: all .5s;
-  transition: all .7s;
+  transition: all .5s;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 .skill:hover .skillicon{
   opacity: 1;
-  -webkit-filter:drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-  filter:drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
 }
 
 

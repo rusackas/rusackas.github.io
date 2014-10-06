@@ -66,8 +66,8 @@
   cursor: pointer;
   z-index: 20;
   box-shadow: 3px 3px 10px #333;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .25s;
+  transition: all .25s;
   outline: none;
 }
 .coverflow_left{
@@ -75,10 +75,11 @@
 }
 .coverflow_right{
   right:0px;
+/*  background:url('../img/slideshow/arrows.png') no-repeat top right;*/
 }
 .coverflow_button:hover{
   box-shadow: 3px 3px 20px #000;
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
