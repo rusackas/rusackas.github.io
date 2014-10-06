@@ -319,6 +319,9 @@ section.module.parallax h1 {
   color:#333;
 }
 */
+#section_case2{
+ overflow: hidden;
+}
 #section_case2 h1{
   font-size: 36px;
   margin-bottom: 20px;
