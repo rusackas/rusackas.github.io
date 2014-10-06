@@ -260,8 +260,8 @@ section.module:last-child {
 }
 section.module h2 {
   margin-bottom: 10px;
-  font-size: 30px;
-  font-family: "Alex Brush";
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 32px;
 }
 section.module p {
   margin-bottom: 40px;
@@ -300,6 +300,10 @@ section.module.parallax h1 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   text-shadow: 3px 3px 20px #000;
+}
+#section_recent h2{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 32px;
 }
 /*
 #section_recent h2{
@@ -353,7 +357,7 @@ section.module.parallax-4 {
 
 @media all and (min-width: 600px) {
   section.module h2 {
-    font-size: 42px;
+/*    font-size: 42px;*/
   }
   section.module p {
     font-size: 20px;
@@ -547,7 +551,7 @@ section.module.parallax-4 {
 .skillheader{
   height: 40px;
   line-height: 40px;
-  font-family:"Alex Brush";
+  font-family: 'Cinzel Decorative', cursive;
   font-size: 30px;
 }
 .skills ul{

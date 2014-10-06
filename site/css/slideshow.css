@@ -248,7 +248,15 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 	.sp-slideshow { height: 158px; }
 }
 .slider-text{
+  text-align: left;
   width:30%;
+  line-height:24px;
+}
+.slider-text ul{
+  list-style-type: square;
+}
+.slider-text li{
+  line-height:24px;
 }
 .slider-pics{
   width:70%;
@@ -267,9 +275,7 @@ x}
 .slider-pics li{
   display: inline-block;
 }
-.slider-text{
-  text-align: left;
-}
+
 .slider-pics li a{
   outline: none;
   border: none;

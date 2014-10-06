@@ -38,6 +38,10 @@
 		"title": "Store",
 		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
 		"image":"img/portfolio/beer_citizen/original/store.png"
+    },
+    {
+		"title": "Mash Tun",
+		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
+		"image":"img/portfolio/beer_citizen/original/mash_tun.png"
     }
-    
 ]

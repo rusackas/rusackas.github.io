@@ -68,7 +68,10 @@ $(function () {
     height: 420,
     backgroundopacity: 0,
     coverwidth: 500,
-    mousewheel: false
+    mousewheel: false,
+    covergap:80,
+    coverangle:50,
+    
   });
   
   //init nav dots
