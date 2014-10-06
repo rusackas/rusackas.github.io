@@ -301,8 +301,32 @@ section.module.parallax h1 {
   transition-timing-function: ease-out;
   text-shadow: 3px 3px 20px #000;
 }
+/*
+#section_recent h2{
+  -webkit-transform: rotateZ(-5deg);
+  transform: rotateZ(-5deg);
+  display: inline-block;
+  background: rgb(240,200,100);
+  padding:20px;
+  box-shadow: 2px 2px 20px #999;
+  position: relative;
+  top:20px;
+  left: -20px;
+  color:#333;
+}
+*/
 #section_case2 h1{
-  font-size: 32px;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#section_case2 h1 a:link, #section_case2 h1 a:visited{
+  color:#c0d454;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+#section_case2 h1 a:hover, #section_case2 h1 a:active{
+  color:#c0d454;
+  text-shadow: 1px 1px 8px #000;
 }
 section.module.parallax h1.offlow {
   /*  left:-6000px;*/
@@ -335,7 +359,7 @@ section.module.parallax-4 {
     font-size: 20px;
   }
   section.module.parallax h1 {
-    font-size: 36px;
+/*    font-size: 36px;*/
   }
 }
 @media all and (min-width: 960px) {
@@ -534,6 +558,13 @@ section.module.parallax-4 {
 .skills li{
   margin-top:10px;
   line-height: 24px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.skills li:hover{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 .skill {
   position: relative;
