@@ -388,7 +388,7 @@
         }
 
         function d(a) {
-            k = a, r.coverheight = "auto" == r.coverheight ? r.height : r.coverheight, l && l.destroy(), l = new j(q, k, r), q.appendChild(l.el), m && q.removeChild(m), r.showtext === !0 && (m = b.createElement("div"), f.addClass(m, "coverflow-text"), q.appendChild(m)), l.on("focus", g), l.on("click", h), l.to(r.item), p.resize(r.width, r.height), r.rotatedelay > 0 && (o && p.stopRotation(), o = setInterval(i, r.rotatedelay), q.addEventListener("touchstart", p.stopRotation, !1), q.addEventListener("mousedown", p.stopRotation, !1)), r.mousewheel && (q.addEventListener("mousewheel", e), q.addEventListener("DOMMouseScroll", e))
+            k = a, r.coverheight = "auto" == r.coverheight ? r.height : r.coverheight, l && l.destroy(), l = new j(q, k, r), q.appendChild(l.el), m && q.removeChild(m), r.showtext === !0 && (m = b.createElement("div"), f.addClass(m, "coverflow-text watchpos"), q.appendChild(m)), l.on("focus", g), l.on("click", h), l.to(r.item), p.resize(r.width, r.height), r.rotatedelay > 0 && (o && p.stopRotation(), o = setInterval(i, r.rotatedelay), q.addEventListener("touchstart", p.stopRotation, !1), q.addEventListener("mousedown", p.stopRotation, !1)), r.mousewheel && (q.addEventListener("mousewheel", e), q.addEventListener("DOMMouseScroll", e))
         }
 
         function e(a) {

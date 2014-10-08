@@ -109,7 +109,7 @@ $(function () {
 function updateScrollStatuses() {
   //keep track of whats onscreen
   'use strict';
-  $('body *').each(function () {
+  $('body .watchpos').each(function () {
     var $this = $(this),
       docViewTop = $(window).scrollTop(),
       docViewBottom = docViewTop + $(window).height(),
