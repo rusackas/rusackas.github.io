@@ -3,7 +3,7 @@
 // @codekit-prepend "../bower_components/tipsy/src/javascripts/jquery.tipsy.js"
 // @codekit-prepend "../bower_components/colorbox/jquery.colorbox-min.js"
 // @codekit-prepend "../bower_components/animatescroll/animatescroll.min.js"
-// @codekit-prepend "jquery.jInvertScroll.js"
+// @codekit-prepend "../bower_components/stellar/jquery.stellar.min.js"
 // @codekit-prepend "jquery.jInvertScroll.js"
 // @codekit-prepend "coverflow.js"
 
@@ -35,6 +35,8 @@ function updateScrollStatuses() {
 }
 
 $(function () {
+  $(window).stellar();
+  
   //pre-select nodes
   'use strict';
   var headerbar = $('#headerbar'), headerlogo_bottom = $('#headerlogo_bottom'), currentTopSection;
