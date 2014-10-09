@@ -32,8 +32,12 @@
 <body>
   
 <?php 
-  echo $_SERVER['HTTP_HOST'];
-  if($_SERVER['HTTP_HOST'] == 'rusackas.com') echo 'Portfolio/Resume coming soon';
+  $launched = false;
+  if($_SERVER['HTTP_HOST'] == 'rusackas.com' || $launched == false){
+?>
+  <div align="center" style="-webkit-animation: throb 2s infinite;animation: throb 2s infinite;padding-top:200px;font-size:32px;text-shadow:2px 2px 100px #fff;">Portfolio website launching soon. Please hold...</div>
+<?php
+  }
   else {
 ?>
   
