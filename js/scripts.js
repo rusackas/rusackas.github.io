@@ -1,3 +1,39 @@
+// @codekit-prepend "../bower_components/jquery/dist/jquery.min.js"
+// @codekit-prepend "../bower_components/modernizr/modernizr.js"
+// @codekit-prepend "../bower_components/tipsy/src/javascripts/jquery.tipsy.js"
+// @codekit-prepend "../bower_components/colorbox/jquery.colorbox-min.js"
+// @codekit-prepend "../bower_components/animatescroll/animatescroll.min.js"
+// @codekit-prepend "jquery.jInvertScroll.js"
+// @codekit-prepend "jquery.jInvertScroll.js"
+// @codekit-prepend "coverflow.js"
+
+function updateScrollStatuses() {
+  //keep track of whats onscreen
+  'use strict';
+  $('body .watchpos, section').each(function () {
+    var $this = $(this),
+      docViewTop = $(window).scrollTop(),
+      docViewBottom = docViewTop + $(window).height(),
+      elemTop = $this.offset().top,
+      elemBottom = elemTop + $this.height();
+
+
+    if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
+      $this.addClass('onscreen');
+      $this.removeClass('offscreen');
+    } else {
+      $this.addClass('offscreen');
+      $this.removeClass('onscreen');
+    }
+    if (elemBottom > docViewBottom) {
+      $this.addClass('offlow');
+    } else { $this.removeClass('offlow'); }
+    if (elemTop < docViewTop) {
+      $this.addClass('offhigh');
+    } else { $this.removeClass('offhigh'); }
+  });
+}
+
 $(function () {
   //pre-select nodes
   'use strict';
@@ -34,8 +70,9 @@ $(function () {
   $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
     {
       height : 3000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
-      onScroll : function (percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
-      //console.log(percent);
+      onScroll : function () {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+        // option: onScroll : function (percent) {
+        //console.log(percent);
       }
     });
   
@@ -71,7 +108,7 @@ $(function () {
     mousewheel: false,
     covergap:80,
     coverangle:50,
-    reflectionopacity:.1
+    reflectionopacity:0.1
   });
   
   //init nav dots
@@ -92,7 +129,7 @@ $(function () {
     $(this).click(function(event){
       event.preventDefault();
       var scrolltarget = $(this).attr('href');
-      console.log(scrolltarget);
+      //console.log(scrolltarget);
       $(scrolltarget).animatescroll({
         scrollSpeed:1000,
         easing:'easeInOutCubic',
@@ -123,34 +160,8 @@ $(function () {
 	var h = 'mailto:' + e + a + d + c;
 	$(this).parent('a').attr('href', h);
 	return e + a + d + c;
-});
+  });
   
 });
 
-function updateScrollStatuses() {
-  //keep track of whats onscreen
-  'use strict';
-  $('body .watchpos, section').each(function () {
-    var $this = $(this),
-      docViewTop = $(window).scrollTop(),
-      docViewBottom = docViewTop + $(window).height(),
-      elemTop = $this.offset().top,
-      elemBottom = elemTop + $this.height();
-
-
-    if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
-      $this.addClass('onscreen');
-      $this.removeClass('offscreen');
-    } else {
-      $this.addClass('offscreen');
-      $this.removeClass('onscreen');
-    }
-    if (elemBottom > docViewBottom) {
-      $this.addClass('offlow');
-    } else { $this.removeClass('offlow'); }
-    if (elemTop < docViewTop) {
-      $this.addClass('offhigh');
-    } else { $this.removeClass('offhigh'); }
-  });
-}
 
