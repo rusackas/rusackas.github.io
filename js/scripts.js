@@ -79,12 +79,33 @@ $(function () {
   $('section').each(function(){
     sectionID = $(this).attr('id');
     //console.log('section found');
-    navHTML += '<a href="#' + sectionID + '" id="nav_' + sectionID + '" original-title="' + $(this).attr('data-title') + '"></a>';
+    navHTML += '<a href="#' + sectionID + '" id="nav_' + sectionID + '" original-title="' + $(this).attr('data-title') + '" class="navdot_link"></a>';
   });
   //navHTML += '<a href="#footer"></a>'
   $('#nav_dots').html(navHTML);
   //nav dot tipsys
   $('#nav_dots a').tipsy({fade: true, gravity: $.fn.tipsy.autoNS});
+  
+  
+  //now make those navdots do sweet animatescroll calls.
+  $('.navdot_link').each(function(){
+    $(this).click(function(event){
+      event.preventDefault();
+      var scrolltarget = $(this).attr('href');
+      console.log(scrolltarget);
+      $(scrolltarget).animatescroll({
+        scrollSpeed:2000,
+        easing:'easeInOutCubic',
+        padding:100,
+        onScrollStart:function(){
+          $('.tipsy').hide();
+        },
+        onScrollEnd:function(){
+          $('.tipsy').show();
+        }
+      });
+    });
+  });
   
   //init colorboxes
   $(".group1").colorbox({rel:'group1',maxHeight:'100%',scalePhotos:'true'});

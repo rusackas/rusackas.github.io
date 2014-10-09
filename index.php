@@ -24,6 +24,7 @@
   <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
   <script type='text/javascript' src='bower_components/tipsy/src/javascripts/jquery.tipsy.js'></script>
   <script type='text/javascript' src='bower_components/colorbox/jquery.colorbox-min.js'></script>
+  <script type='text/javascript' src='bower_components/animatescroll/animatescroll.min.js'></script>
   <script src="js/coverflow.js"></script>
   <script src="js/scripts.js"></script>
 
@@ -59,7 +60,7 @@
         </div>
       </section>
 
-      <section class="module content" id="section_mission" data-title="Mission">
+      <section class="module content" id="section_mission" data-title="Mission/Objectives">
         <div class="colorbacker"></div>
         <div class="container about">
           <h2>My mission:</h2>
@@ -74,7 +75,7 @@
         </div>
       </section>
 
-      <section class="module parallax parallax-2" id="section_skills" data-title="Skills">
+      <section class="module parallax parallax-2" id="section_skills" data-title="Skills/Process">
 <!--        <h1>My process</h1>-->
         <div class="container skills">
           <div class='skill'>
@@ -123,7 +124,7 @@
         </div>
       </section>
 
-      <section class="module content" id="section_recent" data-title="Recent Work">
+      <section class="module content" id="section_recent" data-title="Sample Projects">
         <div class="container">
           <h2>Sample Projects</h2>
           <div class="sp-slideshow">
@@ -272,7 +273,7 @@
         </div>
       </section>
 
-      <section class="module content" id="section_future" data-title="Objectives">
+      <section class="module content" id="section_future" data-title="Onward...">
         <div class="container">
           <h2>Ongoing objectives...</h2>
           <p>
