@@ -33,7 +33,7 @@
   
 <?php 
   $launched = false;
-  if($launched == true || $_SERVER['HTTP_HOST'] == 'localost' || $_REQUEST['preview'] = 'yes') {
+  if($launched == true || $_SERVER['HTTP_HOST'] == 'localhost' || $_REQUEST['preview'] == 'yes') {
 ?>
   
 <div class="horizon scroll">
