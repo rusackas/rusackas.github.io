@@ -71,7 +71,7 @@ $(function () {
     mousewheel: false,
     covergap:80,
     coverangle:50,
-    
+    reflectionopacity:.1
   });
   
   //init nav dots
@@ -109,7 +109,7 @@ $(function () {
 function updateScrollStatuses() {
   //keep track of whats onscreen
   'use strict';
-  $('body .watchpos').each(function () {
+  $('body .watchpos, section').each(function () {
     var $this = $(this),
       docViewTop = $(window).scrollTop(),
       docViewBottom = docViewTop + $(window).height(),
