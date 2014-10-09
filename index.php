@@ -11,10 +11,12 @@
 
   <!-- css -->
   <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative|Raleway:400,300' rel='stylesheet' type='text/css'>
+<!--
   <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
   <link rel="stylesheet" href="bower_components/tipsy/src/stylesheets/tipsy.css" type="text/css" />
   <link rel="stylesheet" href="bower_components/colorbox/example4/colorbox.css" type="text/css" />
   <link rel="stylesheet" href="css/coverflow.css">
+-->
   <link rel="stylesheet" href="css/style.css">
 
   

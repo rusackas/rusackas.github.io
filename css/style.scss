@@ -35,6 +35,16 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+
+/*
+IMPORTS
+*/
+
+@import "slideshow.css";
+@import "../bower_components/tipsy/src/stylesheets/tipsy.css";
+@import "../bower_components/colorbox/example4/colorbox.css";
+@import "coverflow.css";
+
 body {
   
 }
