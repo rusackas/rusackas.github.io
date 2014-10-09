@@ -30,6 +30,13 @@
 </head>
 
 <body>
+  
+<?php 
+  echo $_SERVER['HTTP_HOST'];
+  if($_SERVER['HTTP_HOST'] == 'rusackas.com') echo 'Portfolio/Resume coming soon';
+  else {
+?>
+  
 <div class="horizon scroll">
 <!--  <img src="img/horiz_parallax/horizon.png" alt="" />-->
 </div>
@@ -310,6 +317,10 @@
   </footer><!-- /footer -->
 
 </div><!-- /#wrapper -->
-  
+
+<?php 
+  }
+?>  
+
 </body>
 </html>
