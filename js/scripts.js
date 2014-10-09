@@ -94,7 +94,7 @@ $(function () {
       var scrolltarget = $(this).attr('href');
       console.log(scrolltarget);
       $(scrolltarget).animatescroll({
-        scrollSpeed:2000,
+        scrollSpeed:1000,
         easing:'easeInOutCubic',
         padding:100,
         onScrollStart:function(){
