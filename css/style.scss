@@ -559,10 +559,6 @@ section.module.parallax-4 {
   justify-content: space-between;
   -webkit-perspective: 1000px;
   perspective: 1000px;
-/*
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-*/
 }
 .skillheader{
   height: 40px;
@@ -717,8 +713,6 @@ section.module.parallax-4 {
 .coverflow{
   -webkit-perspective: 1000px;
   perspective: 1000px;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   z-index: 4;
 }
 .coverflow-wrap{
