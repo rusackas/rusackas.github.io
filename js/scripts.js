@@ -71,14 +71,14 @@ $(function () {
   });
   
   //horiz scrolling hexes
-  $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
-    {
-      height : 3000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
-      onScroll : function () {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
-        // option: onScroll : function (percent) {
-        //console.log(percent);
-      }
-    });
+//  $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+//    {
+//      height : 3000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+//      onScroll : function () {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+//        // option: onScroll : function (percent) {
+//        //console.log(percent);
+//    }
+//  });
   
   //about li hovers
   var colorArray = [ "#97A68D", "#BEBF93", "#A68E46", "#594022", "#6B8250", "#2A6170" ];

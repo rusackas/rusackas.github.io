@@ -45,9 +45,6 @@ IMPORTS
 @import "../bower_components/colorbox/example4/colorbox.css";
 @import "coverflow.css";
 
-*{
- box-shadow: none !important;
-}
 
 body {
   
@@ -297,7 +294,6 @@ section.module.parallax {
   background-position: 0 0;
   background-repeat: no-repeat;
   padding:100px 0px;
-  transform: rotate3d(0,0,0);
   background-color: black;
   background-size: cover;
 }
@@ -361,18 +357,22 @@ section.module.parallax h1.offlow {
 section.module.parallax-1 {
   background-image: url("../img/backgrounds/iceland1.jpg");
   height:700px;
+  transform: translateZ(0);
 //  background-attachment: fixed;
 }
 section.module.parallax-2 {
   background-image: url("../img/backgrounds/ireland1.jpg");
+  transform: translateZ(0);
 //  background-attachment: fixed;
 }
 section.module.parallax-3 {
   background-image: url("../img/backgrounds/ireland1.jpg");
+  transform: translateZ(0);
 //  background-attachment: fixed;
 }
 section.module.parallax-4 {
   background-image: url("../img/backgrounds/bc_ipad.jpg");
+  transform: translateZ(0);
 //  background-attachment: fixed;
   height:700px;
 }

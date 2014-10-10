@@ -30,7 +30,7 @@
   <script src="bower_components/animatescroll/animatescroll.min.js"></script>
   <script src="bower_components/stellar/jquery.stellar.min.js"></script>
   <script src="bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"></script>
-  <script src="js/jquery.jInvertScroll.js"></script>
+<!--  <script src="js/jquery.jInvertScroll.js"></script>-->
   <script src="js/coverflow.js"></script>
   <script src="js/scripts.js"></script>
 </head>
@@ -42,15 +42,11 @@
   if($launched == true || $_SERVER['HTTP_HOST'] == 'localhost' || $_REQUEST['preview'] == 'yes') {
 ?>
   
-<div class="horizon scroll">
-<!--  <img src="img/horiz_parallax/horizon.png" alt="" />-->
-</div>
-<div class="middle scroll">
-<!--  <img src="img/horiz_parallax/middle.png" alt="" />-->
-</div>
-<div class="front scroll">
-<!--  <img src="img/horiz_parallax/front.png" alt="" />-->
-</div>
+<!--
+<div class="horizon scroll"></div>
+<div class="middle scroll"></div>
+<div class="front scroll"></div>
+-->
   
 <div class="wrapper">
   <main>
@@ -310,7 +306,7 @@
           </ul>
         </aside>
         <aside>
-          <a href="resume.pdf" target="_blank" class="file"><img alt="Download Resume" src="img/file_icon.png" width="100" height="121" /><span class="download">Download Resumé</span></a>
+          <a href="resume.pdf" target="_blank" class="file"><img alt="Download Résumé" src="img/file_icon.png" width="100" height="121" /><span class="download">Download Résumé</span></a>
         </aside>
       </div>
       <div class="copyright">
