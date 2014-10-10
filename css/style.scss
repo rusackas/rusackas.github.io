@@ -296,9 +296,10 @@ section.module.content {
 section.module.parallax {
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover;
   padding:100px 0px;
   transform: rotate3d(0,0,0);
+  background-color: black;
+  background-size: cover;
 }
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
@@ -360,19 +361,19 @@ section.module.parallax h1.offlow {
 section.module.parallax-1 {
   background-image: url("../img/backgrounds/iceland1.jpg");
   height:700px;
-  background-attachment: fixed;
+//  background-attachment: fixed;
 }
 section.module.parallax-2 {
   background-image: url("../img/backgrounds/ireland1.jpg");
-  background-attachment: fixed;
+//  background-attachment: fixed;
 }
 section.module.parallax-3 {
   background-image: url("../img/backgrounds/ireland1.jpg");
-  background-attachment: fixed;
+//  background-attachment: fixed;
 }
 section.module.parallax-4 {
   background-image: url("../img/backgrounds/bc_ipad.jpg");
-  background-attachment: fixed;
+//  background-attachment: fixed;
   height:700px;
 }
 

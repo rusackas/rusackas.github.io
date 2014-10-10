@@ -29,6 +29,7 @@
   <script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
   <script src="bower_components/animatescroll/animatescroll.min.js"></script>
   <script src="bower_components/stellar/jquery.stellar.min.js"></script>
+  <script src="bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"></script>
   <script src="js/jquery.jInvertScroll.js"></script>
   <script src="js/coverflow.js"></script>
   <script src="js/scripts.js"></script>

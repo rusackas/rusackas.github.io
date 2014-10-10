@@ -4,6 +4,7 @@
 // @codekit-prepend "../bower_components/colorbox/jquery.colorbox-min.js"
 // @codekit-prepend "../bower_components/animatescroll/animatescroll.min.js"
 // @codekit-prepend "../bower_components/stellar/jquery.stellar.min.js"
+// @codekit-prepend "../bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"
 // @codekit-prepend "jquery.jInvertScroll.js"
 // @codekit-prepend "coverflow.js"
 
@@ -35,7 +36,8 @@ $(function () {
       headerbar.removeClass('fixed'); 
       headerlogo_bottom.removeClass('barred');
     }  
-
+    
+    //set oncreen/offscreen classes
     $('body .watchpos, section').each(function () {
       var $this = $(this),
         elemTop = $this.offset().top,
@@ -54,19 +56,20 @@ $(function () {
         $this.addClass('offhigh');
       } else { $this.removeClass('offhigh'); }
     });
-  }
-  
-  $(window).scroll(function () {
-    
-    //set oncreen/offscreen classes
-    updateScrollStatuses();
     
     //update nav to highlight highest current onscreen item
     currentTopSection = $('section.offhigh:last').next('section').attr('id');
     //console.log(currentTopSection);
     $('#nav_'+currentTopSection).addClass('active').siblings().removeClass('active');
+  }
+  
+  //$(window).scroll($.throttle(250, updateScrollStatuses));
+  //$(window).scroll($.debounce(250, updateScrollStatuses));
+  //$(window).scroll(updateScrollStatuses);
+  $(window).on('scroll', function() {
+    window.requestAnimationFrame(updateScrollStatuses);
   });
-
+  
   //horiz scrolling hexes
   $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
     {
