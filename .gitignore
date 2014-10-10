@@ -1,2 +1,6 @@
 
 *.codekit
+
+css/.sass-cache/b3edf1d8b552316e521c1ac51788fbefda17076a/style.scssc
+
+*.scssc
