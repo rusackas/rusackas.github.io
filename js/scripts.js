@@ -5,7 +5,6 @@
 // @codekit-prepend "../bower_components/animatescroll/animatescroll.min.js"
 // @codekit-prepend "../bower_components/stellar/jquery.stellar.min.js"
 // @codekit-prepend "../bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"
-// @codekit-prepend "jquery.jInvertScroll.js"
 // @codekit-prepend "coverflow.js"
 
 
