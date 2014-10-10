@@ -1,18 +1,19 @@
+
 // @codekit-prepend "../bower_components/jquery/dist/jquery.min.js"
 // @codekit-prepend "../bower_components/modernizr/modernizr.js"
 // @codekit-prepend "../bower_components/tipsy/src/javascripts/jquery.tipsy.js"
 // @codekit-prepend "../bower_components/colorbox/jquery.colorbox-min.js"
 // @codekit-prepend "../bower_components/animatescroll/animatescroll.min.js"
-// @codekit-prepend "../bower_components/stellar/jquery.stellar.min.js"
 // @codekit-prepend "../bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"
 // @codekit-prepend "coverflow.js"
 
 
 $(function () {
-  $(window).stellar();
   
-  //pre-select nodes
   'use strict';
+  
+  //$(window).stellar();
+  
   var headerbar = $('#headerbar'), headerlogo_bottom = $('#headerlogo_bottom'), currentTopSection;
   
   var windowheight=$(window).height();
@@ -54,6 +55,9 @@ $(function () {
       if (elemTop < scrolltop) {
         $this.addClass('offhigh');
       } else { $this.removeClass('offhigh'); }
+      if (elemTop > docViewBottom) {
+        $this.addClass('allofflow');
+      } else { $this.removeClass('allofflow'); }
     });
     
     //update nav to highlight highest current onscreen item
@@ -108,13 +112,12 @@ $(function () {
     height: 470,
     backgroundopacity: 0,
     coverwidth: 500,
+    covergap: 100,
+    coverangle: 45,
+    coverdepth: 400,
+    coveroffset: 300,
     mousewheel: false,
-    covergap:100,
-    coverangle:50,
-    reflectionopacity:0.1,
-    coverangle:45,
-    coverdepth:400,
-    coveroffset:300
+    reflectionopacity: 0.1
   });
   
   //init nav dots

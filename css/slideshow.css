@@ -271,7 +271,7 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 .slider-pics a{
 }
 .slider-pics img{
-x}
+}
 .slider-text, .slider-pics{
   float:left;
   height:100%;
@@ -294,6 +294,7 @@ x}
   -webkit-transition: all .25s;
   transition: all .25s;
   margin-right: 10px;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 .slider-pics li img{
