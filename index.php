@@ -22,8 +22,16 @@
   
   <!-- js -->
 
-  <script src="js/min/scripts-min.js"></script>
-
+<!--  <script src="js/min/scripts-min.js"></script>-->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <script src="bower_components/tipsy/src/javascripts/jquery.tipsy.js"></script>
+  <script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
+  <script src="bower_components/animatescroll/animatescroll.min.js"></script>
+  <script src="bower_components/stellar/jquery.stellar.min.js"></script>
+  <script src="js/jquery.jInvertScroll.js"></script>
+  <script src="js/coverflow.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>

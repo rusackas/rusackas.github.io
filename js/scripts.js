@@ -7,32 +7,6 @@
 // @codekit-prepend "jquery.jInvertScroll.js"
 // @codekit-prepend "coverflow.js"
 
-function updateScrollStatuses() {
-  //keep track of whats onscreen
-  'use strict';
-  $('body .watchpos, section').each(function () {
-    var $this = $(this),
-      docViewTop = $(window).scrollTop(),
-      docViewBottom = docViewTop + $(window).height(),
-      elemTop = $this.offset().top,
-      elemBottom = elemTop + $this.height();
-
-
-    if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
-      $this.addClass('onscreen');
-      $this.removeClass('offscreen');
-    } else {
-      $this.addClass('offscreen');
-      $this.removeClass('onscreen');
-    }
-    if (elemBottom > docViewBottom) {
-      $this.addClass('offlow');
-    } else { $this.removeClass('offlow'); }
-    if (elemTop < docViewTop) {
-      $this.addClass('offhigh');
-    } else { $this.removeClass('offhigh'); }
-  });
-}
 
 $(function () {
   $(window).stellar();
@@ -41,15 +15,18 @@ $(function () {
   'use strict';
   var headerbar = $('#headerbar'), headerlogo_bottom = $('#headerlogo_bottom'), currentTopSection;
   
-  $(window).scroll(function () {
-    
-    //
-    var scrolltop = $(window).scrollTop(), opacity = 100, blur = 0;
+  var windowheight=$(window).height();
+  
+  function updateScrollStatuses() {
+    //keep track of whats onscreen
+    'use strict';
+    //docViewTop = $(window).scrollTop()
+    var scrolltop = $(window).scrollTop(), docViewBottom = scrolltop + windowheight, opacity = 100, blur = 0;
     if (scrolltop <= 250) {
       opacity = (100 - (scrolltop / 2.5)) / 100;
       blur = scrolltop / 30;
     } else { opacity = 0; }
-    
+
     //lock header to top
     if (scrolltop >= 400) {
       headerbar.addClass('fixed');
@@ -57,7 +34,29 @@ $(function () {
     } else { 
       headerbar.removeClass('fixed'); 
       headerlogo_bottom.removeClass('barred');
-    }
+    }  
+
+    $('body .watchpos, section').each(function () {
+      var $this = $(this),
+        elemTop = $this.offset().top,
+        elemBottom = elemTop + $this.height();
+      if ((elemBottom <= docViewBottom) && (elemTop >= scrolltop)) {
+        $this.addClass('onscreen');
+        $this.removeClass('offscreen');
+      } else {
+        $this.addClass('offscreen');
+        $this.removeClass('onscreen');
+      }
+      if (elemBottom > docViewBottom) {
+        $this.addClass('offlow');
+      } else { $this.removeClass('offlow'); }
+      if (elemTop < scrolltop) {
+        $this.addClass('offhigh');
+      } else { $this.removeClass('offhigh'); }
+    });
+  }
+  
+  $(window).scroll(function () {
     
     //set oncreen/offscreen classes
     updateScrollStatuses();

@@ -45,6 +45,10 @@ IMPORTS
 @import "../bower_components/colorbox/example4/colorbox.css";
 @import "coverflow.css";
 
+*{
+ box-shadow: none !important;
+}
+
 body {
   
 }
@@ -481,10 +485,6 @@ section.module.parallax-4 {
   margin-left: -270px;
   -webkit-filter: drop-shadow(3px 3px 10px rgba(0,0,0,.4));
   filter: drop-shadow(3px 3px 10px rgba(0,0,0,.4));
-/*
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
-  filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
-*/
 }
 #headerlogo_bottom{
   display: block;
@@ -497,10 +497,6 @@ section.module.parallax-4 {
   transition: transform .5s;
   -webkit-filter: drop-shadow(3px 3px 5px rgba(0,0,0,.5));
   filter: drop-shadow(3px 3px 5px rgba(0,0,0,.5));
-/*
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
-  filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
-*/
 }
 #headerlogo_bottom.barred{
   top:590px;
