@@ -374,6 +374,7 @@ section.module.parallax-4 {
   background-image: url("../img/backgrounds/bc_ipad.jpg");
   transform: translateZ(0);
 //  background-attachment: fixed;
+  padding-top:50px;
   height:700px;
 }
 
@@ -715,14 +716,15 @@ section.module.parallax-4 {
   perspective: 1000px;
   z-index: 4;
 }
-.coverflow-wrap{
-  margin-bottom:40px; 
+.coverflow-cell canvas{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .coverflow-text{
   background-color:rgba(0,0,0,.7);
   height:200px;
   padding:20px;
-  margin-top:70px;
+  margin-top:90px;
   opacity: 0;
   -webkit-transition: all 1s;
   transition: all 1s;

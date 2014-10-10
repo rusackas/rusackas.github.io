@@ -106,13 +106,16 @@ $(function () {
     flash: 'coverflow.swf',
     playlist: 'playlist2.json',
     width: 960,
-    height: 420,
+    height: 470,
     backgroundopacity: 0,
     coverwidth: 500,
     mousewheel: false,
-    covergap:80,
+    covergap:100,
     coverangle:50,
-    reflectionopacity:0.1
+    reflectionopacity:0.1,
+    coverangle:45,
+    coverdepth:400,
+    coveroffset:300
   });
   
   //init nav dots
