@@ -22,7 +22,8 @@
   
   <!-- js -->
 
-<!--  <script src="js/min/scripts-min.js"></script>-->
+  <script src="js/min/scripts-min.js"></script>
+<!--
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/modernizr/modernizr.js"></script>
   <script src="bower_components/tipsy/src/javascripts/jquery.tipsy.js"></script>
@@ -32,6 +33,7 @@
   <script src="bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"></script>
   <script src="js/coverflow.js"></script>
   <script src="js/scripts.js"></script>
+-->
 </head>
 
 <body>

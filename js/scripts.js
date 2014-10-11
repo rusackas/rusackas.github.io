@@ -5,29 +5,40 @@
 // @codekit-prepend "../bower_components/colorbox/jquery.colorbox-min.js"
 // @codekit-prepend "../bower_components/animatescroll/animatescroll.min.js"
 // @codekit-prepend "../bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"
+// DISABLED@codekit-prepend "../bbower_components/stellar/jquery.stellar.min.js"
 // @codekit-prepend "coverflow.js"
 
 
 $(function () {
   
   'use strict';
-  
   //$(window).stellar();
   
   var headerbar = $('#headerbar'), headerlogo_bottom = $('#headerlogo_bottom'), currentTopSection;
   
   var windowheight=$(window).height();
   
-  function updateScrollStatuses() {
-    //keep track of whats onscreen
-    'use strict';
-    //docViewTop = $(window).scrollTop()
-    var scrolltop = $(window).scrollTop(), docViewBottom = scrolltop + windowheight, opacity = 100, blur = 0;
-    if (scrolltop <= 250) {
-      opacity = (100 - (scrolltop / 2.5)) / 100;
-      blur = scrolltop / 30;
-    } else { opacity = 0; }
+  function isElementInViewport (el) {
 
+    //special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
+
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+    );
+  }
+
+  //jQuery
+  $(window).on('DOMContentLoaded load resize scroll', function(){
+    
+    var scrolltop = $(window).scrollTop();
     //lock header to top
     if (scrolltop >= 400) {
       headerbar.addClass('fixed');
@@ -35,43 +46,80 @@ $(function () {
     } else { 
       headerbar.removeClass('fixed'); 
       headerlogo_bottom.removeClass('barred');
-    }  
+    }
     
-    //set oncreen/offscreen classes
-    $('body .watchpos, section').each(function () {
-      var $this = $(this),
-        elemTop = $this.offset().top,
-        elemBottom = elemTop + $this.height();
-      if ((elemBottom <= docViewBottom) && (elemTop >= scrolltop)) {
+    $('body .watchpos, section').each(function(){
+      var $this = $(this);
+      if ( isElementInViewport($this) ) {
         $this.addClass('onscreen');
         $this.removeClass('offscreen');
-      } else {
-        $this.addClass('offscreen');
-        $this.removeClass('onscreen');
       }
-      if (elemBottom > docViewBottom) {
-        $this.addClass('offlow');
-      } else { $this.removeClass('offlow'); }
-      if (elemTop < scrolltop) {
-        $this.addClass('offhigh');
-      } else { $this.removeClass('offhigh'); }
-      if (elemTop > docViewBottom) {
-        $this.addClass('allofflow');
-      } else { $this.removeClass('allofflow'); }
+      else{
+        $this.removeClass('onscreen');
+        $this.addClass('offscreen');
+      }
     });
     
     //update nav to highlight highest current onscreen item
     currentTopSection = $('section.offhigh:last').next('section').attr('id');
     //console.log(currentTopSection);
     $('#nav_'+currentTopSection).addClass('active').siblings().removeClass('active');
+    
+  }); 
+
+  
+  
+  function updateScrollStatuses() {
+    //keep track of whats onscreen
+//    'use strict';
+    //docViewTop = $(window).scrollTop()
+//    var scrolltop = $(window).scrollTop(), docViewBottom = scrolltop + windowheight, opacity = 100, blur = 0;
+//    if (scrolltop <= 250) {
+//      opacity = (100 - (scrolltop / 2.5)) / 100;
+//      blur = scrolltop / 30;
+//    } else { opacity = 0; }
+
+    //lock header to top
+//    if (scrolltop >= 400) {
+//      headerbar.addClass('fixed');
+//      headerlogo_bottom.addClass('barred');
+//    } else { 
+//      headerbar.removeClass('fixed'); 
+//      headerlogo_bottom.removeClass('barred');
+//    }  
+    
+    //set oncreen/offscreen classes
+//    $('body .watchpos, section').each(function () {
+//      var $this = $(this),
+//        elemTop = $this.offset().top,
+//        elemBottom = elemTop + $this.height();
+//      if ((elemBottom <= docViewBottom) && (elemTop >= scrolltop)) {
+//        $this.addClass('onscreen');
+//        $this.removeClass('offscreen');
+//      } else {
+//        $this.addClass('offscreen');
+//        $this.removeClass('onscreen');
+//      }
+//      if (elemBottom > docViewBottom) {
+//        $this.addClass('offlow');
+//      } else { $this.removeClass('offlow'); }
+//      if (elemTop < scrolltop) {
+//        $this.addClass('offhigh');
+//      } else { $this.removeClass('offhigh'); }
+//      if (elemTop > docViewBottom) {
+//        $this.addClass('allofflow');
+//      } else { $this.removeClass('allofflow'); }
+//    });
+    
+
   }
   
   //$(window).scroll($.throttle(250, updateScrollStatuses));
   //$(window).scroll($.debounce(250, updateScrollStatuses));
   //$(window).scroll(updateScrollStatuses);
-  $(window).on('scroll', function() {
-    window.requestAnimationFrame(updateScrollStatuses);
-  });
+//  $(window).on('scroll', function() {
+//    window.requestAnimationFrame(updateScrollStatuses);
+//  });
   
   //horiz scrolling hexes
 //  $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
