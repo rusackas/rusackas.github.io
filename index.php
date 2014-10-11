@@ -51,7 +51,7 @@
   
 <div class="wrapper">
   <main>
-      <section class="module parallax parallax-1 watchpos" id="section_intro" data-title="Intro" data-stellar-background-ratio="0.25">
+      <section class="module parallax parallax-1 watchpos" id="section_intro" data-title="Intro" data-stellar-background-ratio="0.5">
         <div id="headerbar">
           <div id="nameplate">Evan Rusackas</div>
           <div class="container">
@@ -77,7 +77,7 @@
         </div>
       </section>
 
-      <section class="module parallax parallax-2" id="section_skills" data-title="Skills/Process" data-stellar-background-ratio="0.25">
+      <section class="module parallax parallax-2" id="section_skills" data-title="Skills/Process" data-stellar-background-ratio="0.5">
 <!--        <h1>My process</h1>-->
         <div class="container skills">
           <div class='skill'>
@@ -266,7 +266,7 @@
         </div>
       </section>
 -->
-      <section class="module parallax parallax-4" id="section_case2" data-title="Beer Citizen" data-stellar-background-ratio="0.25">
+      <section class="module parallax parallax-4" id="section_case2" data-title="Beer Citizen" data-stellar-background-ratio="0.5">
         <div class="container">
           <h1 class="watchpos">Case Study: <a href="http://beercitizen.com/" target="_blank">Beer Citizen</a></h1>
           <div id="player2"></div>

@@ -5,14 +5,14 @@
 // @codekit-prepend "../bower_components/colorbox/jquery.colorbox-min.js"
 // @codekit-prepend "../bower_components/animatescroll/animatescroll.min.js"
 // @codekit-prepend "../bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"
-// DISABLED@codekit-prepend "../bbower_components/stellar/jquery.stellar.min.js"
+// @codekit-prepend "../bower_components/stellar/jquery.stellar.min.js"
 // @codekit-prepend "coverflow.js"
 
 
 $(function () {
   
   'use strict';
-  //$(window).stellar();
+  $(window).stellar();
   
   var headerbar = $('#headerbar'), headerlogo_bottom = $('#headerlogo_bottom'), currentTopSection;
   

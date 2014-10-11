@@ -358,24 +358,28 @@ section.module.parallax h1.offscreen {
 section.module.parallax-1 {
   background-image: url("../img/backgrounds/iceland1.jpg");
   height:700px;
-//  background-attachment: fixed;
+  background-attachment: fixed;
+  transform: rotate3d(0,0,0);
 }
 section.module.parallax-2 {
   background-image: url("../img/backgrounds/ireland1.jpg");
   transform: translateZ(0);
-//  background-attachment: fixed;
+  background-attachment: fixed;
+  transform: rotate3d(0,0,0);
 }
 section.module.parallax-3 {
   background-image: url("../img/backgrounds/ireland1.jpg");
   transform: translateZ(0);
-//  background-attachment: fixed;
+  background-attachment: fixed;
+  transform: rotate3d(0,0,0);
 }
 section.module.parallax-4 {
   background-image: url("../img/backgrounds/bc_ipad.jpg");
   transform: translateZ(0);
-//  background-attachment: fixed;
+  background-attachment: fixed;
   padding-top:50px;
   height:700px;
+  transform: rotate3d(0,0,0);
 }
 
 @media all and (min-width: 600px) {
@@ -539,6 +543,7 @@ section.module.parallax-4 {
   transition: all 1.5s;
   border-radius: 5px;
   line-height: 32px;
+  transform: rotate3d(0,0,0);
 }
 .about li:hover{
   background-color:rgba(255,255,255,.6);
