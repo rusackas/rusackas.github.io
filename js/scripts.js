@@ -8,11 +8,10 @@
 // @codekit-prepend "../bower_components/stellar/jquery.stellar.min.js"
 // @codekit-prepend "coverflow.js"
 
-
 $(function () {
   
   'use strict';
-  $(window).stellar();
+  //$(window).stellar();
   
   var headerbar = $('#headerbar'), headerlogo_bottom = $('#headerlogo_bottom'), currentTopSection;
   

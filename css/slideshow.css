@@ -134,22 +134,26 @@
 
 input.sp-selector-1:checked ~ .sp-content {
     background-position: 0 0;
-	background-color: #727b7f;
+	background-color: #61116a;
+    /* GV */
 }
 
 input.sp-selector-2:checked ~ .sp-content {
     background-position: -100px 0;
-	background-color: #7f7276;
+	background-color: #6F0F00;
+    /* LINK */
 }
 
 input.sp-selector-3:checked ~ .sp-content {
     background-position: -200px 0;
-	background-color: #737f72;
+	background-color: #0089CF;
+    /* CENGAGE */
 }
 
 input.sp-selector-4:checked ~ .sp-content {
     background-position: -300px 0;
-	background-color: #79727f;
+	background-color: #a80532;
+    /* Stanford */
 }
 
 input.sp-selector-5:checked ~ .sp-content {
@@ -257,13 +261,21 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 .slider-text{
   text-align: left;
   width:30%;
-  line-height:24px;
+  line-height:28px;
+  background-color:rgba(255,255,255,.8);
+  color:#333;
+  font-size:16px;
 }
 .slider-text ul{
   list-style-type: square;
 }
 .slider-text li{
   line-height:24px;
+}
+.slider-text img{
+  padding:0 !important;
+  display:block;
+  margin:0 auto 20px auto !important;
 }
 .slider-pics{
   width:70%;

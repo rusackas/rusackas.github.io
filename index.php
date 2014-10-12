@@ -158,19 +158,17 @@
                       <li>
                         <div class="slider-pics">
                           <ul>
-                            <li><a class="group1" href="img/portfolio/gv/960/purplesite.jpg" title=""><img src="img/portfolio/gv/200/purplesite.jpg" /></a></li>
-                            <li><a class="group1" href="img/portfolio/gv/960/cms.jpg" title=""><img src="img/portfolio/gv/200/cms.jpg" /></a></li>
-                            <li><a class="group1" href="img/portfolio/gv/960/ediusworld.jpg" title=""><img src="img/portfolio/gv/200/ediusworld.jpg" /></a></li>
-                            <li><a class="group1" href="img/portfolio/gv/960/stratus1.jpg" title=""><img src="img/portfolio/gv/200/stratus1.jpg" /></a></li>
-                            <li><a class="group1" href="img/portfolio/gv/960/museum.jpg" title=""><img src="img/portfolio/gv/200/museum.jpg" /></a></li>
-                            <li><a class="group1" href="img/portfolio/gv/960/navigator.jpg" title=""><img src="img/portfolio/gv/200/navigator.jpg" /></a></li>
+                            <li><a class="group1" href="img/portfolio/gv/960/purplesite.jpg" title="Fourth generation main site template"><img src="img/portfolio/gv/200/purplesite.jpg" /></a></li>
+                            <li><a class="group1" href="img/portfolio/gv/960/cms.jpg" title="Custom CMS system (page editor biew)"><img src="img/portfolio/gv/200/cms.jpg" /></a></li>
+                            <li><a class="group1" href="img/portfolio/gv/960/ediusworld.jpg" title="EDIUSWorld software training portal"><img src="img/portfolio/gv/200/ediusworld.jpg" /></a></li>
+                            <li><a class="group1" href="img/portfolio/gv/960/stratus1.jpg" title="STRATUS mobile application demos"><img src="img/portfolio/gv/200/stratus1.jpg" /></a></li>
+                            <li><a class="group1" href="img/portfolio/gv/960/museum.jpg" title="GV Museum standalone site"><img src="img/portfolio/gv/200/museum.jpg" /></a></li>
+                            <li><a class="group1" href="img/portfolio/gv/960/navigator.jpg" title="GV Navigator Sales/Marketing support portal"><img src="img/portfolio/gv/200/navigator.jpg" /></a></li>
                           </ul>
                         </div>
                         <div class="slider-text">
-                          <h2>Grass Valley</h2>
-                          <ul>
-                            <li>Stuuuuffffff</li>
-                          </ul>
+                          <img src="img/portfolio/gv/logo/gv_logo.png" />
+                          Four generations of website theme design and implementation. Custom CMS and page-building system UI and theming. Design and front-end development of mobile apps for tradeshows, one-off event websites, and corrollary sites for internal teams, marketing, training, etc.
                         </div>
                       </li>
                       <li>
@@ -184,14 +182,8 @@
                           </ul>
                         </div>
                         <div class="slider-text">
-                          <h2>Link TV websites and CMS system</h2>
-                          <ul>
-                            <li>UI design / buildout of custom content management system</li>
-                            <li>UI design for front-end / back-end of Link TV Platform (open source semantic web driven video portal)</li>
-                            <li>Viewchange.org UI development</li>
-                            <li>Explore.org website interface design and implementation</li>
-                            <li>Design, development, and theming of several sub-sites, web portals, and site templates</li>
-                          </ul>
+                          <img src="img/portfolio/link_media/logo/link_logo.png" />
+                            UI design and front-end buildout of Linktv.org wbsite and custom CMS. UI design and buildout of Link TV Platform (open source semantic web driven video portal). UI Design, development, and theming of several sub-sites, web portals, and site templates, including Explore.org and ViewChange.org.
                         </div>
                       </li>
                       <li>
@@ -199,14 +191,13 @@
                           <ul>
                             <li><a class="group3" href="img/portfolio/cengage/960/discoverywheel.jpg" title=""><img src="img/portfolio/cengage/200/discoverywheel.jpg" /></a></li>
                             <li><a class="group3" href="img/portfolio/cengage/960/lsi.jpg" title=""><img src="img/portfolio/cengage/200/lsi.png" /></a></li>
+                            <li><a class="group3" href="img/portfolio/cengage/960/PL1.jpg" title=""><img src="img/portfolio/cengage/200/PL1.jpg" /></a></li>
+                            <li><a class="group3" href="img/portfolio/cengage/960/PL2.jpg" title=""><img src="img/portfolio/cengage/200/PL2.jpg" /></a></li>
                           </ul>
                         </div>
                         <div class="slider-text">
-                          <h2>Cengage</h2>
-                          <ul>
-                            <li>UI design of interactive HTML5 instructional activities.</li>
-                            <li>Adove ExtendScript Workflow automation for Adobe Creative Suite to process bulk images using CSV data and automate HTML image gallery building </li>
-                          </ul>
+                          <img src="img/portfolio/cengage/logo/cengage_logo.png" />
+                          UI design of interactive HTML5 instructional activities. Production of websites, interactive media, and DVD-ROM accompaniments for higher ed textbook publications. Adobe ExtendScript Workflow automation for Adobe Creative Suite processing of artwork driven by CSV data.
                         </div>
                       </li>
                       <li>
@@ -221,7 +212,7 @@
                           </ul>
                         </div>
                         <div class="slider-text">
-                          <h2>Stanford University</h2>
+                          <img src="img/portfolio/stanford/logo/stanford_logo.png" />
                           Implementation of UI for iPad-based cartographic museum exhibition. UI design and buildout of corresponding website. Built with HTML5, jQuery, and responsive design.
                         </div>
                       </li>
