@@ -174,11 +174,11 @@
                       <li>
                         <div class="slider-pics">
                           <ul>
-                            <li><a class="group2" href="img/portfolio/link_media/960/linkorg.jpg" title=""><img src="img/portfolio/link_media/200/linkorg.jpg" /></a></li>
-                            <li><a class="group2" href="img/portfolio/link_media/960/viewchange2.jpg" title=""><img src="img/portfolio/link_media/200/viewchange2.jpg" /></a></li>
-                            <li><a class="group2" href="img/portfolio/link_media/960/VC.jpg" title=""><img src="img/portfolio/link_media/200/VC.jpg" /></a></li>
-                            <li><a class="group2" href="img/portfolio/link_media/960/explore_photos.jpg" title=""><img src="img/portfolio/link_media/200/explore_photos.jpg" /></a></li>
-                            <li><a class="group2" href="img/portfolio/link_media/960/cms.jpg" title=""><img src="img/portfolio/link_media/200/cms.jpg" /></a></li>
+                            <li><a class="group2" href="img/portfolio/link_media/960/linkorg.jpg" title="LinkTV.org website"><img src="img/portfolio/link_media/200/linkorg.jpg" /></a></li>
+                            <li><a class="group2" href="img/portfolio/link_media/960/viewchange2.jpg" title="ViewChange.org semantic video browser"><img src="img/portfolio/link_media/200/viewchange2.jpg" /></a></li>
+                            <li><a class="group2" href="img/portfolio/link_media/960/VC.jpg" title="Viewchange.org player and direct action page"><img src="img/portfolio/link_media/200/VC.jpg" /></a></li>
+                            <li><a class="group2" href="img/portfolio/link_media/960/explore_photos.jpg" title="Explore.org UI/UX design"><img src="img/portfolio/link_media/200/explore_photos.jpg" /></a></li>
+                            <li><a class="group2" href="img/portfolio/link_media/960/cms.jpg" title="LinkTV.org CMS system"><img src="img/portfolio/link_media/200/cms.jpg" /></a></li>
                           </ul>
                         </div>
                         <div class="slider-text">
@@ -189,10 +189,11 @@
                       <li>
                         <div class="slider-pics">
                           <ul>
-                            <li><a class="group3" href="img/portfolio/cengage/960/discoverywheel.jpg" title=""><img src="img/portfolio/cengage/200/discoverywheel.jpg" /></a></li>
-                            <li><a class="group3" href="img/portfolio/cengage/960/lsi.jpg" title=""><img src="img/portfolio/cengage/200/lsi.png" /></a></li>
-                            <li><a class="group3" href="img/portfolio/cengage/960/PL1.jpg" title=""><img src="img/portfolio/cengage/200/PL1.jpg" /></a></li>
-                            <li><a class="group3" href="img/portfolio/cengage/960/PL2.jpg" title=""><img src="img/portfolio/cengage/200/PL2.jpg" /></a></li>
+                            <li><a class="group3" href="img/portfolio/cengage/960/discoverywheel.jpg" title="HTML5 activity UI design"><img src="img/portfolio/cengage/200/discoverywheel.jpg" /></a></li>
+                            <li><a class="group3" href="img/portfolio/cengage/960/lsi.jpg" title="HTML5 activity UI design"><img src="img/portfolio/cengage/200/lsi.png" /></a></li>
+                            <li><a class="group3" href="img/portfolio/cengage/960/PL1.jpg" title="PowerLecture instructional resources"><img src="img/portfolio/cengage/200/PL1.jpg" /></a></li>
+                            <li><a class="group3" href="img/portfolio/cengage/960/PL2.jpg" title="PowerLecture instructional resources"><img src="img/portfolio/cengage/200/PL2.jpg" /></a></li>
+                            <li><a class="group3" href="img/portfolio/cengage/960/careers-in-CJ.jpg" title="Careers in Criminal Justice Flash application"><img src="img/portfolio/cengage/200/careers-in-CJ.jpg" /></a></li>
                           </ul>
                         </div>
                         <div class="slider-text">
@@ -203,12 +204,12 @@
                       <li>
                         <div class="slider-pics">
                           <ul>
-                            <li><a class="group5" href="img/portfolio/stanford/960/YOS_2.jpg" title="Yosemite App"><img src="img/portfolio/stanford/200/YOS_2.jpg" /></a></li>
-                            <li><a class="group5" href="img/portfolio/stanford/960/YOS_3.jpg" title="Yosemite App 2"><img src="img/portfolio/stanford/200/YOS_3.jpg" /></a></li>
-                            <li><a class="group5" href="img/portfolio/stanford/960/CRO_1.jpg" title=""><img src="img/portfolio/stanford/200/CRO_1.jpg" /></a></li>
-                            <li><a class="group5" href="img/portfolio/stanford/960/CRO_3.jpg" title=""><img src="img/portfolio/stanford/200/CRO_3.jpg" /></a></li>
-                            <li><a class="group5" href="img/portfolio/stanford/960/PAC_1.jpg" title=""><img src="img/portfolio/stanford/200/PAC_1.jpg" /></a></li>
-                            <li><a class="group5" href="img/portfolio/stanford/960/PAC_2.jpg" title=""><img src="img/portfolio/stanford/200/PAC_2.jpg" /></a></li>
+                            <li><a class="group5" href="img/portfolio/stanford/960/YOS_2.jpg" title="Carleton Watkins Yosemite interactive map appllication"><img src="img/portfolio/stanford/200/YOS_2.jpg" /></a></li>
+                            <li><a class="group5" href="img/portfolio/stanford/960/YOS_3.jpg" title="Carleton Watkins Yosemite interactive map appllication"><img src="img/portfolio/stanford/200/YOS_3.jpg" /></a></li>
+                            <li><a class="group5" href="img/portfolio/stanford/960/CRO_1.jpg" title="Carleton Watkins Columbia River interactive map iPad app"><img src="img/portfolio/stanford/200/CRO_1.jpg" /></a></li>
+                            <li><a class="group5" href="img/portfolio/stanford/960/CRO_3.jpg" title="Carleton Watkins Columbia River interactive map iPad app"><img src="img/portfolio/stanford/200/CRO_3.jpg" /></a></li>
+                            <li><a class="group5" href="img/portfolio/stanford/960/PAC_1.jpg" title="Carleton Watkins Pacific Coast interactive photographic iPad app"><img src="img/portfolio/stanford/200/PAC_1.jpg" /></a></li>
+                            <li><a class="group5" href="img/portfolio/stanford/960/PAC_2.jpg" title="Carleton Watkins Pacific Coast interactive photographic iPad app"><img src="img/portfolio/stanford/200/PAC_2.jpg" /></a></li>
                           </ul>
                         </div>
                         <div class="slider-text">
@@ -219,27 +220,19 @@
                       <li>
                         <div class="slider-pics">
                           <ul>
-                            <li><a class="group4" href="img/portfolio/print/960/linoleum.jpg" title=""><img src="img/portfolio/print/200/linoleum.jpg" /></a></li>
-                            <li><a class="group4" href="img/portfolio/print/960/Express5800_320Ma-1.jpg" title=""><img src="img/portfolio/print/200/Express5800_320Ma-1.jpg" /></a></li>
-                            <li><a class="group4" href="img/portfolio/print/960/Express5800_320Ma.jpg" title=""><img src="img/portfolio/print/200/Express5800_320ma.jpg" /></a></li>
-                            <li><a class="group4" href="img/portfolio/print/960/f51.jpg" title=""><img src="img/portfolio/print/200/f51.jpg" /></a></li>
-                            <li><a class="group4" href="img/portfolio/print/960/PatMetheneyPage.jpg" title=""><img src="img/portfolio/print/200/PatMetheneyPage.jpg" /></a></li>
+                            <li><a class="group4" href="img/portfolio/print/960/linoleum.jpg" title="Lotteria linoleum carving print"><img src="img/portfolio/print/200/linoleum.jpg" /></a></li>
+                            <li><a class="group4" href="img/portfolio/print/960/PatMetheneyPage.jpg" title="Fingerstyle Guitar layout"><img src="img/portfolio/print/200/PatMetheneyPage.jpg" /></a></li>
+                            <li><a class="group4" href="img/portfolio/print/960/Express5800_320Ma-1.jpg" title="NEC server brochure"><img src="img/portfolio/print/200/Express5800_320Ma-1.jpg" /></a></li>
+                            <li><a class="group4" href="img/portfolio/print/960/Express5800_320Ma.jpg" title="NEC server brochure"><img src="img/portfolio/print/200/Express5800_320ma.jpg" /></a></li>
+                            <li><a class="group4" href="img/portfolio/print/960/f51.jpg" title="Fingerstyle Guitar layout"><img src="img/portfolio/print/200/f51.jpg" /></a></li>
+                            <li><a class="group4" href="img/portfolio/print/960/nec_postcard.jpg" title="NEC Postctard"><img src="img/portfolio/print/200/nec_postcard.jpg" /></a></li>
                           </ul>
                         </div>
                         <div class="slider-text">
                           <h2>Print Design</h2>
-                          Art direction and design for Bassics Magazine, Fingerstyle Guitar Magazine, and StickIt!, along with design and production of marketing and collatteral materials
+                          Art direction of three magazines, a varied past of marketing and instructional materials for various clients, and a personal love of linoleum varving for letterpress printing. Copy writing/editing, photography, and illustration play their part here, too.
                         </div>
                       </li>
-<!--
-                      <li>
-                        <div class="slider-pics"></div>
-                        <div class="slider-text">
-                          <h3>KareCo /Pharmagel</h3>
-                          Design and implementation of custm Shopify storefront, custom CMS system, and HTML emails.
-                        </div>
-                      </li>
--->
 					</ul>
 				</div><!-- sp-content -->
 				
