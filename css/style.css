@@ -708,3 +708,6 @@ section.module .coverflow-text h3 {
 /* BONUS ROUND */
 #overlayContent {
   display: none; }
+
+#overlayContent.visible {
+  display: block; }

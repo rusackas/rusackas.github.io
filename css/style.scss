@@ -775,3 +775,6 @@ section.module .coverflow-text h3{
 #overlayContent{
   display: none;
 }
+#overlayContent.visible{
+  display: block;
+}

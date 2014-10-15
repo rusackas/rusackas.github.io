@@ -8,7 +8,19 @@
 // @codekit-no-prepend "../bower_components/stellar/jquery.stellar.min.js"
 // @codekit-prepend "../bower_components/konami-code/src/jquery.konami.min.js"
 // @codekit-prepend "../bower_components/blockui/jquery.blockUI.js"
+// @codekit-prepend "../bower_components/createjs-tweenjs/lib/tweenjs-NEXT.combined.js"
+// @codekit-prepend "../bower_components/easeljs/lib/easeljs-NEXT.min.js"
+// @codekit-no-prepend "../bower_components/tweenjs/src/Tween.js"
+// @codekit-prepend "CSSPlugin.js"
 // @codekit-prepend "coverflow.js"
+
+//  <script type="text/javascript" src="http://www.createjs.com/Demos/TweenJS/assets/easeljs-NEXT.min.js"></script>
+//  <script type="text/javascript" src="http://www.createjs.com/Demos/src/createjs/events/Event.js"></script>
+//  <script type="text/javascript" src="http://www.createjs.com/Demos/src/createjs/events/EventDispatcher.js"></script>
+//  <script type="text/javascript" src="http://www.createjs.com/Demos/src/tweenjs/Tween.js"></script>
+//  <script type="text/javascript" src="http://www.createjs.com/Demos/src/tweenjs/Ease.js"></script>
+//  <script type="text/javascript" src="http://www.createjs.com/Demos/src/tweenjs/CSSPlugin.js"></script>
+
 
 $(function () {
   
@@ -224,17 +236,123 @@ $(function () {
   $(function() {
     $( window ).konami({
       cheat: function() {
+        
+        //$('#overlayContent').addClass('visible');
         $.blockUI({ 
-          message:$('#overlayContent').html(),
-          css: { 
-                backgroundColor: 'transparent', 
-                color: '#fff',
-                'border': 'none'
-               }
-        });
+          message: $('#overlayContent'), 
+          css: {
+                'width': '960px',
+                'color':'#fff',
+                'background': 'none',
+                'border':'none',
+                'margin-left':'-480px',
+                left:'50%',
+                cursor:'default'
+               },
+          onBlock: function() { 
+            init();
+            disable_scroll();
+          },
+          overlayCSS:  { 
+            opacity:0.9, 
+            cursor:'default' 
+          },
+        }); 
+
+        
+        $('#overlayClose').click(function(){
+          //$('#overlayContent').removeClass('visible');
+          $.unblockUI();
+          enable_scroll();
+        });        
       } // end cheat
     });
   });
+  //init();
 });
 
 
+
+var colorSeed = 0;
+
+function init() {
+    if (window.top != window) {
+        document.getElementById("header").style.display = "none";
+    }
+
+    createjs.CSSPlugin.install(createjs.Tween);
+
+    //createjs.Ticker.setFPS(20);
+    var count = 600;
+    while (--count >= 0) {
+        var box = document.createElement("div");
+        box.style.width = "2px";
+        box.style.height = "2px";
+        box.style.position = "absolute";
+        box.style.borderRadius = "2px";
+        box.style.backgroundColor = "#0F0";
+        $('.blockOverlay').first().append(box);
+        var a = (Math.random()*Math.PI*2*16|0)/16;
+        box.style.webkitTransform = "rotate("+a+"rad)";
+        var d = 30;
+        box.style.left = window.innerWidth/2+Math.cos(a-0.2-Math.random())*d+"px";
+        box.style.top = window.innerHeight/2+Math.sin(a-0.2-Math.random())*d+"px";
+        d = (Math.min(window.innerWidth,window.innerHeight)-16)/2*(Math.random()*0.3+0.7);
+        var x = window.innerWidth/2+Math.cos(a)*d;
+        var y = window.innerHeight/2+Math.sin(a)*d;
+        createjs.Tween.get(box, {loop:true}, true).set({opacity:"0"},box.style).wait(Math.random()*1000+1|0).call(updateColor).to({top:y,left:x,width:16,height:4,opacity:1},Math.random()*1500+1000,easeIn);
+    }
+    // tween the base color that divs will be assigned when they start moving:
+    createjs.Tween.get(this,{loop:true}).to({colorSeed:360},5000);
+}
+
+function updateColor(tween) {
+    // grab the tween's target (the style object), and update it's color
+    tween._target.style.backgroundColor = "hsl("+(Math.random()*60+colorSeed|0)+",100%,50%)";
+}
+
+// very simple easing equation:
+function easeIn(ratio) {
+    return ratio*ratio;
+}
+
+//prevent BG scrolling while overlay is on
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = [37, 38, 39, 40];
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;  
+}
+
+function keydown(e) {
+    for (var i = keys.length; i--;) {
+        if (e.keyCode === keys[i]) {
+            preventDefault(e);
+            return;
+        }
+    }
+}
+
+function wheel(e) {
+  preventDefault(e);
+}
+
+function disable_scroll() {
+  if (window.addEventListener) {
+      window.addEventListener('DOMMouseScroll', wheel, false);
+  }
+  window.onmousewheel = document.onmousewheel = wheel;
+  document.onkeydown = keydown;
+}
+
+function enable_scroll() {
+    if (window.removeEventListener) {
+        window.removeEventListener('DOMMouseScroll', wheel, false);
+    }
+    window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
+}
+	

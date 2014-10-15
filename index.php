@@ -34,6 +34,7 @@
   <script src="js/coverflow.js"></script>
   <script src="js/scripts.js"></script>
 -->
+<!--  <script type="text/javascript" src="http://www.createjs.com/Demos/src/tweenjs/CSSPlugin.js"></script>-->
 </head>
 
 <body>
@@ -306,6 +307,7 @@
 
 <div id="overlayContent">
   <h1>SNOO!</h1>
+  <div id="overlayClose">CLOSE</div>
 </div>  
 
 <?php 
