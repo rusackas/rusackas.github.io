@@ -378,7 +378,7 @@ section.module.parallax-4 {
   transform: translateZ(0);
 //  background-attachment: fixed;
   padding-top:50px;
-  height:700px;
+  height:720px;
   transform: rotate3d(0,0,0);
 }
 
@@ -729,7 +729,7 @@ section.module.parallax-4 {
 .coverflow-text{
   background-color:rgba(0,0,0,.7);
   height:200px;
-  padding:20px;
+  padding:20px 100px;
   margin-top:90px;
   opacity: 0;
   -webkit-transition: all 1s;
@@ -739,8 +739,6 @@ section.module.parallax-4 {
 }
 .coverflow-text.onscreen{
   background-color:rgba(0,0,0,.7);
-  height:180px;
-  padding:20px;
   opacity: 1;
   -webkit-transform: rotateX(12deg);
   transform: rotateX(12deg);
@@ -749,7 +747,8 @@ section.module .coverflow-text h2{
   
 }
 section.module .coverflow-text h3{
-  
+  font-size:16px;
+  line-height:24px;
 }
 
 /* ============================================================

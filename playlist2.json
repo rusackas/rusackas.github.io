@@ -1,47 +1,67 @@
 [
 	{
-		"title": "Home Screen [mobile]",
-		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
-		"image":"img/portfolio/beer_citizen/original/1-homepage_leaderboards.png"
+		"title": "Beer Citizen apps",
+		"description": "Beer Citizen is an app for iOS and Android (and the web) offering a new and better way to review beer, and uses review data to help you learn more about the beers you encounter",
+		"image":"img/portfolio/beer_citizen/470h/phones.png"
 	},
     {
-		"title": "Beer Profile [mobile]",
-		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
-		"image":"img/portfolio/beer_citizen/original/2-beer_profile.png"
+		"title": "Beer review process (iPhone)",
+		"description": "Image of the trait-based, data-driven review process in action on an iPhone. Traits are selected, and a slider sets the intensity of that trait.",
+		"image":"img/portfolio/beer_citizen/470h/iPhone_action.jpg"
 	},
     {
-		"title": "Style Profile [mobile]",
-		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
-		"image":"img/portfolio/beer_citizen/original/3-AmericanImpStout.png"
+		"title": "Beer profile (mobile)",
+		"description": "The data gathered from reviews is applied in numerous places. On the beer's profile view, all traits entered by all users shows the community opinion of what a beer really tastes like",
+		"image":"img/portfolio/beer_citizen/470h/app_beer_profile.jpg"
 	},
     {
-		"title": "Similar Beers [web]",
-		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
-		"image":"img/portfolio/beer_citizen/original/4-Beer_Profile_Pliny_Similar.png"
+		"title": "Similar beers (mobile)",
+		"description": "The intensity of a beers traits, and frequency of that trait's use, among other metrics, is used to find beers similar to the one you've looked up",
+		"image":"img/portfolio/beer_citizen/470h/app_similar.jpg"
 	},
     {
-		"title": "Beer Profile [web]",
-		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
-		"image":"img/portfolio/beer_citizen/original/2-beerprofile.png"
+		"title": "Native apps and mobile web",
+		"description": "Built in HTML5, the app works both on the mobile web, and as a native app thanks to PhoneGap",
+		"image":"img/portfolio/beer_citizen/470h/iPad_action.jpg"
 	},
     {
-		"title": "User Profile [web]",
-		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
-		"image":"img/portfolio/beer_citizen/original/3-profilepage.png"
+		"title": "Mobile wireframing",
+		"description": "For mobile and desktop web, numerous UI wireframes were created (and re-created) prior to style/template mockups and buildout",
+		"image":"img/portfolio/beer_citizen/470h/wireframes.jpg"
+	},
+    {
+		"title": "Desktop website mockups",
+		"description": "After wireframing for both mobile and desktop web, design mockups were created to further establish stylistic direction",
+		"image":"img/portfolio/beer_citizen/470h/mockups.png"
+	},
+    {
+		"title": "Desktop home",
+		"description": "In the final design, all functions and features are available on both desktop web and mobile, with the designs echoing each other",
+		"image":"img/portfolio/beer_citizen/470h/web-homepage.jpg"
+	},
+    {
+		"title": "Beer profile (desktop)",
+		"description": "All activity, data, and related content for a beer is visible at a glance on the desktop website, and just a tab away on mobile/apps",
+		"image":"img/portfolio/beer_citizen/470h/web_beer_profile.jpg"
+	},
+    {
+		"title": "Offline version",
+		"description": "During design/development, an 'offline' version was designed as a downloadable, printable, foldable book to gather data wherever possible",
+		"image":"img/portfolio/beer_citizen/470h/offline.jpg"
+	},
+    {
+		"title": "Collateral goods",
+		"description": "To spread the word about the site and app, a wide variety of goods have been designed to give away and/or sell. Many are hand-made (e.g. letterpress coasters), others machine-made, locally wherever possible.",
+		"image":"img/portfolio/beer_citizen/470h/swag.png"
+	},
+    {
+		"title": "Online store",
+		"description": "To sell merchandise of all sorts, a custom Shopify theme echoing the design of the apps/website was designed and built",
+		"image":"img/portfolio/beer_citizen/470h/store.jpg"
 	},
     {
 		"title": "Blog",
-		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
-		"image":"img/portfolio/beer_citizen/original/blog.png"
-	},
-    {
-		"title": "Store",
-		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
-		"image":"img/portfolio/beer_citizen/original/store.png"
-    },
-    {
-		"title": "Mash Tun",
-		"description": "Here, users can see all the data gathered from user reviews at a glance, ",
-		"image":"img/portfolio/beer_citizen/original/mash_tun.png"
-    }
+		"description": "A custom blog theme was designed and developed on Tumblr, which is often used to push update information to users via our social media channels (Twitter, Facebook, Google +, etc)",
+		"image":"img/portfolio/beer_citizen/470h/blog.jpg"
+	}
 ]
