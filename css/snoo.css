@@ -6,6 +6,8 @@
   height: 380px;
   position: relative;
   margin: 0 auto;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 #reddit-alien div { 
@@ -138,4 +140,28 @@
 #reddit-alien .foot.right {
   border-radius: 24px 24px 0 0;
   left: 156px;
+}
+
+/*CUSTOM GOODIES */
+#overlayCaption, #reddit-alien{
+  cursor:pointer;
+}
+#overlayCaption{
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width:400px;
+  font-size:18px;
+  line-height:24px;
+  margin:0 auto;
+}
+#overlayCaption.active{
+  opacity: 0;
+}
+#reddit-alien.active{
+  -webkit-transform: scale(0.1) translateY(-1000px);
+  -ms-transform: scale(0.1) translateY(-1000px);
+  transform: scale(0.1) translateY(-1000px);
+  opacity: 0;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }

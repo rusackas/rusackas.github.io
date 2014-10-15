@@ -237,7 +237,8 @@ $(function () {
     $( window ).konami({
       cheat: function() {
         
-        //$('#overlayContent').addClass('visible');
+        $('#reddit-alien, #overlayCaption').removeClass('active');
+        
         $.blockUI({ 
           message: $('#overlayContent'), 
           css: {
@@ -260,15 +261,17 @@ $(function () {
         }); 
 
         
-        $('#overlayClose').click(function(){
-          //$('#overlayContent').removeClass('visible');
-          $.unblockUI();
-          enable_scroll();
+        $('#overlayClose, #reddit-alien').click(function(){
+          $('#reddit-alien, #overlayCaption').addClass('active');
+          setTimeout(function(){
+            $.unblockUI();
+            enable_scroll();
+          },2000);
         });        
       } // end cheat
     });
   });
-  //init();
+  init();
 });
 
 
