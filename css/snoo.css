@@ -41,6 +41,12 @@
   -webkit-background-clip: padding-box;
   border-radius: 26px;
   background: white;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+    box-shadow: 0px 0px 0px white;
+}
+#reddit-alien:hover .dot {
+  box-shadow: 0px 0px 100px white;
 }
 
 #reddit-alien .ear {
@@ -76,6 +82,12 @@
   top: 29px;
   border-radius: 16px;
   background: orangeRed;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+#reddit-alien .head:hover .eye{
+  -webkit-animation: squint .25s 1;
+  animation: squint .25s 1;
 }
 #reddit-alien .eye.left { left: 42px; }
 #reddit-alien .eye.right { left: 110px; }
@@ -89,8 +101,14 @@
   border: 9px solid white;
   border-bottom-color: black;
   border-radius: 150px / 120px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
-
+#reddit-alien:hover .mouth{
+  width:104px;
+  left:30px;
+  border-radius: 200px / 120px;
+}
 #reddit-alien .body {
   z-index: 1;
   width: 88px;
@@ -120,7 +138,11 @@
 
 #reddit-alien .arm.right {
   left: 170px;
-  border-radius: 0 43px 43px 0;
+  border-radius: 0px 43px 43px 40px;
+  -webkit-animation: wave 1s infinite;
+  animation: wave 1s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 #reddit-alien .foot {
@@ -164,4 +186,32 @@
   opacity: 0;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+}
+
+@-webkit-keyframes squint{
+  0%, 100% { }
+  50% { 
+    height:0px;
+    border-radius: 16px 16px 5px 5px;
+    top:35px;
+  }
+}
+@keyframes squint{
+  0%, 100% { }
+  50% { 
+    height:0px;
+    border-radius: 16px 16px 5px 5px;
+    top:35px;
+  }
+}
+
+
+
+@-webkit-keyframes wave {
+  0%, 100% { -webkit-transform: rotateZ(-90deg) translate3d(20px, 20px, 0px); transform: rotateZ(-90deg) translate3d(20px, 20px, 0px); }
+  50% { -webkit-transform: rotateZ(-120deg) translate3d(40px, 40px, 0); transform: rotateZ(-120deg) translate3d(40px, 40px, 0); }
+}
+@keyframes wave {
+  0%, 100% { -webkit-transform: rotateZ(-90deg) translate3d(20px, 20px, 0px); transform: rotateZ(-90deg) translate3d(20px, 20px, 0px); }
+  50% { -webkit-transform: rotateZ(-120deg) translate3d(40px, 40px, 0); transform: rotateZ(-120deg) translate3d(40px, 40px, 0); }
 }

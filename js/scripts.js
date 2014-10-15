@@ -271,7 +271,7 @@ $(function () {
       } // end cheat
     });
   });
-  init();
+  //init();
 });
 
 
