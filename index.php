@@ -306,7 +306,23 @@
 </div><!-- /#wrapper -->
 
 <div id="overlayContent">
-  <h1>SNOO!</h1>
+  <div id="reddit-alien">
+    <div class="antenna">
+      <div class="dot"></div>
+    </div>
+    <div class="ear left"></div>
+    <div class="ear right"></div>
+    <div class="head">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="arm left"></div>
+    <div class="arm right"></div>
+    <div class="body"></div>
+    <div class="foot left"></div>
+    <div class="foot right"></div>
+  </div>
   <div id="overlayClose">CLOSE</div>
 </div>  
 
