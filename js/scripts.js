@@ -4,8 +4,10 @@
 // @codekit-prepend "../bower_components/tipsy/src/javascripts/jquery.tipsy.js"
 // @codekit-prepend "../bower_components/colorbox/jquery.colorbox-min.js"
 // @codekit-prepend "../bower_components/animatescroll/animatescroll.min.js"
-// @codekit-prepend "../bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"
-// @codekit-prepend "../bower_components/stellar/jquery.stellar.min.js"
+// @codekit-no-prepend "../bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"
+// @codekit-no-prepend "../bower_components/stellar/jquery.stellar.min.js"
+// @codekit-prepend "../bower_components/konami-code/src/jquery.konami.min.js"
+// @codekit-prepend "../bower_components/blockui/jquery.blockUI.js"
 // @codekit-prepend "coverflow.js"
 
 $(function () {
@@ -218,6 +220,21 @@ $(function () {
 	return e + a + d + c;
   });
   
+  //secret!
+  $(function() {
+    $( window ).konami({
+      cheat: function() {
+        $.blockUI({ 
+          message:$('#overlayContent').html(),
+          css: { 
+                backgroundColor: 'transparent', 
+                color: '#fff',
+                'border': 'none'
+               }
+        });
+      } // end cheat
+    });
+  });
 });
 
 

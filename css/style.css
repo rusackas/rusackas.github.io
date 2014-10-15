@@ -705,3 +705,6 @@ section.module .coverflow-text h3 {
     opacity: 0.5; }
   50% {
     opacity: 1; } }
+/* BONUS ROUND */
+#overlayContent {
+  display: none; }
