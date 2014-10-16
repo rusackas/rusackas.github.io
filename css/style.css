@@ -346,7 +346,7 @@ section.module.parallax-3 {
           transform: rotate3d(0, 0, 0); }
 
 section.module.parallax-4 {
-  background-image: url("../img/backgrounds/bc_ipad.jpg");
+  background-image: url("../img/backgrounds/beers.jpg");
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   padding-top: 50px;
