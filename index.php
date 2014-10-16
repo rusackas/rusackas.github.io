@@ -40,7 +40,7 @@
 <body>
   
 <?php 
-  $launched = false;
+  $launched = true;
   if($launched == true || $_SERVER['HTTP_HOST'] == 'localhost' || $_REQUEST['preview'] == 'yes') {
 ?>
   
