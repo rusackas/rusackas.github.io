@@ -95,7 +95,9 @@ main {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  position: relative; }
+  position: relative;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
 
 /* ============================================================
   HEADER & SITE TITLE
@@ -326,24 +328,31 @@ section.module.parallax h1.offscreen {
 section.module.parallax-1 {
   background-image: url("../img/backgrounds/iceland1.jpg");
   height: 700px;
-  transform: rotate3d(0, 0, 0); }
+  -webkit-transform: rotate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0); }
 
 section.module.parallax-2 {
   background-image: url("../img/backgrounds/ireland1.jpg");
-  transform: translateZ(0);
-  transform: rotate3d(0, 0, 0); }
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform: rotate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0); }
 
 section.module.parallax-3 {
   background-image: url("../img/backgrounds/ireland1.jpg");
-  transform: translateZ(0);
-  transform: rotate3d(0, 0, 0); }
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform: rotate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0); }
 
 section.module.parallax-4 {
   background-image: url("../img/backgrounds/bc_ipad.jpg");
-  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   padding-top: 50px;
   height: 720px;
-  transform: rotate3d(0, 0, 0); }
+  -webkit-transform: rotate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0); }
 
 @media all and (min-width: 600px) {
   section.module h2 {
@@ -503,7 +512,8 @@ section.module.parallax-4 {
   transition: all 1.5s;
   border-radius: 5px;
   line-height: 32px;
-  transform: translateZ(0); }
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
 
 .about li:hover {
   background-color: rgba(255, 255, 255, 0.6);
@@ -716,6 +726,27 @@ section.module .coverflow-text h3 {
   RESPONSIVE BOLD STROKES
 ============================================================ */
 @media all and (max-width: 959px) {
+  #headerlogo_top {
+    max-width: 100%;
+    display: inline;
+    left: auto;
+    margin: 0 auto; }
+
+  #nameplate {
+    left: auto;
+    width: 100%;
+    text-align: center; }
+
+  #headerbar.fixed #nameplate {
+    bottom: 80px;
+    left: auto;
+    font-size: 12px; }
+
+  #headerlogo_bottom.barred {
+    -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5); }
+
   .about ul {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -724,6 +755,9 @@ section.module .coverflow-text h3 {
   .about li {
     font-size: 14px;
     line-height: 21px; }
+
+  .about li.offscreen {
+    opacity: 1; }
 
   .skills {
     display: block;
@@ -736,17 +770,20 @@ section.module .coverflow-text h3 {
     box-shadow: none;
     background: rgba(0, 0, 0, 0.7);
     -webkit-transform: none;
-    transform: none;
+    -ms-transform: none;
+        transform: none;
     margin-top: 10px;
     position: relative; }
 
   .skills li:hover {
     -webkit-transform: none;
-    transform: none; }
+    -ms-transform: none;
+        transform: none; }
 
   .skill:hover {
     -webkit-transform: none;
-    transform: none;
+    -ms-transform: none;
+        transform: none;
     box-shadow: none; }
 
   .skill .skillicon {
@@ -771,6 +808,9 @@ section.module .coverflow-text h3 {
     line-height: 21px;
     margin-top: 5px; }
 
+  .skill li.offscreen {
+    opacity: 1; }
+
   .skill:nth-of-type(1) .skilliconshadow {
     background: rgba(128, 0, 0, 0.8); }
 
@@ -781,7 +821,8 @@ section.module .coverflow-text h3 {
     background: rgba(0, 0, 128, 0.8); }
 
   .skillheader {
-    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     padding-left: 80px;
     text-align: left; }
 
@@ -817,4 +858,7 @@ section.module .coverflow-text h3 {
 
   #section_future p {
     font-size: 14px;
-    line-height: 21px; } }
+    line-height: 21px; }
+
+  ul.social li {
+    margin-right: 3px; } }

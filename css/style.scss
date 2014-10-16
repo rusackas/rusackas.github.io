@@ -116,6 +116,7 @@ main {
   margin: 0 auto;
   padding: 0 20px;
   position:relative;
+  box-sizing: border-box;
 }
 
 /* ============================================================
@@ -782,6 +783,25 @@ section.module .coverflow-text h3{
   RESPONSIVE BOLD STROKES
 ============================================================ */
 @media all and (max-width: 959px) {
+  #headerlogo_top{
+    max-width: 100%;
+    display: inline;
+    left:auto;
+    margin:0 auto;
+  }
+  #nameplate{
+    left:auto;
+    width: 100%;
+    text-align: center;
+  }
+  #headerbar.fixed #nameplate{
+    bottom: 80px;
+    left:auto;
+    font-size:12px;
+  }
+  #headerlogo_bottom.barred{
+    transform: scale(.5);
+  }
   .about ul{
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -790,6 +810,9 @@ section.module .coverflow-text h3{
   .about li{
     font-size:14px;
     line-height: 21px;
+  }
+  .about li.offscreen{
+  opacity: 1;
   }
   .skills{
     display:block;
@@ -837,6 +860,9 @@ section.module .coverflow-text h3{
     line-height: 21px;
     margin-top:5px;
   }
+  .skill li.offscreen{
+    opacity: 1;
+  }
   .skill:nth-of-type(1) .skilliconshadow{
     background:rgba(128,0,0,.8);
   }
@@ -851,6 +877,7 @@ section.module .coverflow-text h3{
     padding-left: 80px;
     text-align: left;
   }
+  
   .sp-slideshow{
     height:auto;
   }
@@ -884,6 +911,9 @@ section.module .coverflow-text h3{
   #section_future p{
     font-size: 14px;
     line-height: 21px;
+  }
+  ul.social li{
+  margin-right:3px;
   }
 }
 
