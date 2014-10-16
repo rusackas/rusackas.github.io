@@ -98,12 +98,12 @@ $(function () {
     //update nav to highlight highest current onscreen item
     var currentTopSection = '';
     if($('section.onscreen').length > 0){
-      console.log('somethingOnscreen');
+      //console.log('somethingOnscreen');
       currentTopSection = $('section.onscreen:last');
     }
     else{
       currentTopSection = $('section.onfromtop:last');
-      console.log('somethingsTop');
+      //console.log('somethingsTop');
     }
     var currentTopSectionID = currentTopSection.attr('id');
     //console.log(currentTopSection);
