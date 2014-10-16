@@ -63,15 +63,15 @@
         </div>
       </section>
 
-      <section class="module content" id="section_mission" data-title="Mission/Objectives">
+      <section class="module content" id="section_mission" data-title="Objectives">
         <div class="colorbacker"></div>
         <div class="container about">
-          <h2>My mission:</h2>
+          <h2>My objectives:</h2>
           <ul>
             <li class="watchpos">To design, implement, and improve web/application/mobile interfaces, making the experience both intuitive and memorable for end users</li>
             <li class="watchpos">To take advantage of the new and exciting technologies and practices to make the processes of design, development, and testing all integrate smoothly</li>
-            <li class="watchpos">To work with a team of like-minded designers, developers, and content creators in a challenging and creative environment</li>
-            <li class="watchpos">To take on a role that caters to my interests, skills, and experiences both professionally and personally</li>
+            <li class="watchpos">To work with and build teams of like-minded designers, developers, and content creators in a challenging and creative environment</li>
+            <li class="watchpos">To take on challenges and roles that caters to my interests, skills, and experiences both professionally and personally</li>
             <li class="watchpos">To find unique and creative solutions to design and interface issues using the latest tools, techniques, and design patterns</li>
             <li class="watchpos">To design and build interfaces look, act, and feel like home.</li>
           </ul>
