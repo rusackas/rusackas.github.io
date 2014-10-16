@@ -268,7 +268,7 @@ $(function () {
     $( window ).konami({
       cheat: function() {
         
-        $('#reddit-alien, #overlayCaption').removeClass('active');
+        $('#reddit-alien, #overlayCaption, .upvote').removeClass('active');
         
         $.blockUI({ 
           message: $('#overlayContent'), 
@@ -279,6 +279,8 @@ $(function () {
                 'border':'none',
                 'margin-left':'-480px',
                 left:'50%',
+                top:'50%',
+                'margin-top':'-240px',
                 cursor:'default'
                },
           onBlock: function() { 
@@ -293,11 +295,11 @@ $(function () {
 
         
         $('#overlayClose, #reddit-alien').click(function(){
-          $('#reddit-alien, #overlayCaption').addClass('active');
+          $('#reddit-alien, #overlayCaption, .upvote').addClass('active');
           setTimeout(function(){
             $.unblockUI();
             enable_scroll();
-          },2000);
+          },3500);
         });        
       } // end cheat
     });
