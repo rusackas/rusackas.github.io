@@ -325,7 +325,7 @@
     <div class="foot left"></div>
     <div class="foot right"></div>
   </div>
-  <div id="overlayCaption">Hi reddit! Thanks for checking this out, and taking me into consideration. I hope I get to meet you all soon!</div>
+  <div id="overlayCaption">Hi reddit! Thanks for checking this out, and taking me into consideration. I hope I get to meet you all soon!<br /><i>{Click snoo to bail out}</i></div>
 </div>  
 
 <?php 
