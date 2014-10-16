@@ -294,7 +294,7 @@
           </ul>
         </aside>
         <aside>
-          <a href="resume.pdf" target="_blank" class="file"><img alt="Download Résumé" src="img/file_icon.png" width="100" height="121" /><span class="download">Download Résumé</span></a>
+          <a href="Evan_Rusackas_resume.pdf" target="_blank" class="file"><img alt="Download Résumé" src="img/file_icon.png" width="100" height="121" /><span class="download">Download Résumé</span></a>
         </aside>
       </div>
       <div class="copyright">
