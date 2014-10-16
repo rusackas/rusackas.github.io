@@ -40,12 +40,26 @@ $(function () {
 
     var rect = el.getBoundingClientRect();
 
-    return (
+    if (
         rect.top >= 0 &&
         rect.left >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
         rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
-    );
+    ) return 'onscreen';
+    else if(
+      rect.top >= (window.innerHeight || document.documentElement.clientHeight) || rect.bottom <= 0
+    ) return 'offscreen';
+    else if(
+      rect.top < 0 && rect.bottom > (window.innerHeight || document.documentElement.clientHeight)
+    ) return 'overflowing';
+    else if(
+      rect.top < 0 &&
+      rect.bottom >= 0
+    ) return 'onfromtop';
+    else if(
+      rect.bottom > (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top < (window.innerHeight || document.documentElement.clientHeight)
+    ) return 'onfrombottom';
   }
 
   //jQuery
@@ -63,20 +77,37 @@ $(function () {
     
     $('body .watchpos, section').each(function(){
       var $this = $(this);
-      if ( isElementInViewport($this) ) {
+      var screenstatus = isElementInViewport($this);
+      if (screenstatus == 'onscreen') {
         $this.addClass('onscreen');
-        $this.removeClass('offscreen');
-      }
-      else{
-        $this.removeClass('onscreen');
+      } else $this.removeClass('onscreen');
+      if (screenstatus == 'offscreen') {
         $this.addClass('offscreen');
-      }
+      } else $this.removeClass('offscreen');
+      if (screenstatus == 'overflowing') {
+        $this.addClass('overflowing');
+      } else $this.removeClass('overflowing');
+      if (screenstatus == 'onfromtop') {
+        $this.addClass('onfromtop');
+      } else $this.removeClass('onfromtop');
+      if (screenstatus == 'onfrombottom') {
+        $this.addClass('onfrombottom');
+      } else $this.removeClass('onfrombottom');
     });
     
     //update nav to highlight highest current onscreen item
-    currentTopSection = $('section.offhigh:last').next('section').attr('id');
+    var currentTopSection = '';
+    if($('section.onscreen').length > 0){
+      console.log('somethingOnscreen');
+      currentTopSection = $('section.onscreen:last');
+    }
+    else{
+      currentTopSection = $('section.onfromtop:last');
+      console.log('somethingsTop');
+    }
+    var currentTopSectionID = currentTopSection.attr('id');
     //console.log(currentTopSection);
-    $('#nav_'+currentTopSection).addClass('active').siblings().removeClass('active');
+    $('#nav_'+currentTopSectionID).addClass('active').siblings().removeClass('active');
     
   }); 
 
