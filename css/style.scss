@@ -778,16 +778,113 @@ section.module .coverflow-text h3{
   50% { opacity: 1; }
 }
 
-/* BONUS ROUND */
-#overlayContent{
-  display: none;
+/* ============================================================
+  RESPONSIVE BOLD STROKES
+============================================================ */
+@media all and (max-width: 959px) {
+  .about ul{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1; 
+  }
+  .about li{
+    font-size:14px;
+    line-height: 21px;
+  }
+  .skills{
+    display:block;
+    -webkit-perspective: none;
+    perspective: none;
+    padding:0;
+  }
+  .skill{
+    width:100%;
+    box-shadow: none;
+    background: rgba(0,0,0,.7);
+    -webkit-transform: none;
+    transform: none;
+    margin-top:10px;
+    position: relative;
+  }
+  .skills li:hover{
+    -webkit-transform: none;
+    transform: none;
+  }
+  .skill:hover{
+    -webkit-transform: none;
+    transform: none;
+    box-shadow: none;
+  }
+  .skill .skillicon{
+    opacity: 1;
+    width:60px;
+    height:60px;
+    top:10px;
+    left:10px;
+    position: absolute;
+  }
+  .skill .skilliconshadow{
+    background:rgba(0,0,0,.8);
+    height:60px;
+    width:60px;
+    position: absolute;
+    top:10px;
+    left:10px;
+    margin:0;
+  }
+  .skill li{
+    font-size: 14px;
+    line-height: 21px;
+    margin-top:5px;
+  }
+  .skill:nth-of-type(1) .skilliconshadow{
+    background:rgba(128,0,0,.8);
+  }
+  .skill:nth-of-type(2) .skilliconshadow{
+    background:rgba(0,128,0,.8);
+  }
+  .skill:nth-of-type(3) .skilliconshadow{
+    background:rgba(0,0,128,.8);
+  }
+  .skillheader{
+    box-sizing: border-box;
+    padding-left: 80px;
+    text-align: left;
+  }
+  .sp-slideshow{
+    height:auto;
+  }
+  .slider-pics{
+    float:none;
+    width:auto;
+  }
+  .slider-text{
+    float:none;
+    width:auto;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .slider-pics li{
+    max-width: 45% !important;
+  }
+  .slider-pics li img{
+    max-height: 90px !important;
+  }
+  aside{
+    display: block;
+    width:100%;
+    text-align: center;
+  }
+  #nav_dots{
+    display: none;
+  }
+  section.module.parallax{
+    padding:10px;
+  }
+  #section_future p{
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
-#overlayContent.visible{
-  display: block;
-}
-.snoostructions{
-  margin-top:10px;
-  color:orangered;
-  -webkit-animation: throb 2s infinite;
-  animation: throb 2s infinite;
-}
+
+

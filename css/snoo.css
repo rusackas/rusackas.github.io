@@ -256,3 +256,16 @@
   top:-2px;
   border:none;
 }
+
+#overlayContent{
+  display: none;
+}
+#overlayContent.visible{
+  display: block;
+}
+.snoostructions{
+  margin-top:10px;
+  color:orangered;
+  -webkit-animation: throb 2s infinite;
+  animation: throb 2s infinite;
+}
