@@ -307,6 +307,7 @@
 
 </div><!-- /#wrapper -->
 
+<!--
 <div id="overlayContent">
   
   <div id="reddit-alien">
@@ -332,6 +333,7 @@
   </div>
   <div id="overlayCaption">Hi reddit! Thanks for checking this out, and taking me into consideration. I hope I get to meet you all soon!<div class="snoostructions">Click snoo to bail out</div></div>
 </div>  
+-->
 
 <?php 
   }

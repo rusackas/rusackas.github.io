@@ -44,7 +44,7 @@ IMPORTS
 @import "../bower_components/tipsy/src/stylesheets/tipsy.css";
 @import "../bower_components/colorbox/example4/colorbox.css";
 @import "coverflow.css";
-@import "snoo.css";
+//@import "snoo.css";
 
 
 body {
@@ -355,7 +355,7 @@ section.module.parallax h1 {
   line-height:42px;
 }
 //section.module.parallax h1.offlow {
-section.module.parallax h1.offscreen {
+section.module.parallax h1.offscreen_vert {
   /*  left:-6000px;*/
   -webkit-transform: scale(.7) rotateX(90deg);
   transform: scale(.7) rotateX(90deg);
@@ -421,7 +421,7 @@ section.module.parallax-4 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.parallax-1.onscreen #headerbar{
+.parallax-1.onscreen_vert #headerbar{
   background: rgba(0,0,0,.7);
   background: rgba(0,0,0,.7);
 }
@@ -560,7 +560,7 @@ section.module.parallax-4 {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-.about li.offscreen{
+.about li.offscreen_vert{
   opacity:.3;
 }
 .skills{
@@ -628,7 +628,7 @@ section.module.parallax-4 {
 }
 */
 //.skill li.offlow{
-.skill li.offscreen{
+.skill li.offscreen_vert{
   opacity: .2;
 }
 
@@ -745,7 +745,7 @@ section.module.parallax-4 {
   -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
 }
-.coverflow-text.onscreen{
+.coverflow-text.onscreen_vert{
   background-color:rgba(0,0,0,.7);
   opacity: 1;
   -webkit-transform: rotateX(12deg);
@@ -811,7 +811,7 @@ section.module .coverflow-text h3{
     font-size:14px;
     line-height: 21px;
   }
-  .about li.offscreen{
+  .about li.offscreen_vert{
   opacity: 1;
   }
   .skills{
@@ -860,7 +860,7 @@ section.module .coverflow-text h3{
     line-height: 21px;
     margin-top:5px;
   }
-  .skill li.offscreen{
+  .skill li.offscreen_vert{
     opacity: 1;
   }
   .skill:nth-of-type(1) .skilliconshadow{

@@ -6,12 +6,13 @@
 // @codekit-prepend "../bower_components/animatescroll/animatescroll.min.js"
 // @codekit-no-prepend "../bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"
 // @codekit-no-prepend "../bower_components/stellar/jquery.stellar.min.js"
-// @codekit-prepend "../bower_components/konami-code/src/jquery.konami.min.js"
-// @codekit-prepend "../bower_components/blockui/jquery.blockUI.js"
-// @codekit-prepend "../bower_components/createjs-tweenjs/lib/tweenjs-NEXT.combined.js"
-// @codekit-prepend "../bower_components/easeljs/lib/easeljs-NEXT.min.js"
+// @codekit-no-prepend "../bower_components/konami-code/src/jquery.konami.min.js"
+// @codekit-no-prepend "../bower_components/blockui/jquery.blockUI.js"
+// @codekit-no-prepend "../bower_components/createjs-tweenjs/lib/tweenjs-NEXT.combined.js"
+// @codekit-no-prepend "../bower_components/easeljs/lib/easeljs-NEXT.min.js"
 // @codekit-no-prepend "../bower_components/tweenjs/src/Tween.js"
 // @codekit-prepend "CSSPlugin.js"
+// @codekit-prepend "jquery.whatwhere.js"
 // @codekit-prepend "coverflow.js"
 
 //  <script type="text/javascript" src="http://www.createjs.com/Demos/TweenJS/assets/easeljs-NEXT.min.js"></script>
@@ -31,34 +32,7 @@ $(function () {
   
   var windowheight=$(window).height();
   
-  function isElementInViewport (el) {
 
-    //special bonus for those using jQuery
-    if (typeof jQuery === "function" && el instanceof jQuery) {
-        el = el[0];
-    }
-
-    var rect = el.getBoundingClientRect();
-
-    if (
-        rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) 
-    ) return 'onscreen';
-    else if(
-      rect.top >= (window.innerHeight || document.documentElement.clientHeight) || rect.bottom <= 0
-    ) return 'offscreen';
-    else if(
-      rect.top < 0 && rect.bottom > (window.innerHeight || document.documentElement.clientHeight)
-    ) return 'overflowing';
-    else if(
-      rect.top < 0 &&
-      rect.bottom >= 0
-    ) return 'onfromtop';
-    else if(
-      rect.bottom > (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top < (window.innerHeight || document.documentElement.clientHeight)
-    ) return 'onfrombottom';
-  }
 
   //jQuery
   $(window).on('DOMContentLoaded load resize scroll', function(){
@@ -73,25 +47,9 @@ $(function () {
       headerlogo_bottom.removeClass('barred');
     }
     
-    $('body .watchpos, section').each(function(){
-      var $this = $(this);
-      var screenstatus = isElementInViewport($this);
-      if (screenstatus == 'onscreen') {
-        $this.addClass('onscreen');
-      } else $this.removeClass('onscreen');
-      if (screenstatus == 'offscreen') {
-        $this.addClass('offscreen');
-      } else $this.removeClass('offscreen');
-      if (screenstatus == 'overflowing') {
-        $this.addClass('overflowing');
-      } else $this.removeClass('overflowing');
-      if (screenstatus == 'onfromtop') {
-        $this.addClass('onfromtop');
-      } else $this.removeClass('onfromtop');
-      if (screenstatus == 'onfrombottom') {
-        $this.addClass('onfrombottom');
-      } else $this.removeClass('onfrombottom');
-    });
+    $.whatwhere('body .watchpos, section');
+    
+    
     
     //update nav to highlight highest current onscreen item
     var currentTopSection = '';
@@ -261,47 +219,47 @@ $(function () {
 	return e + a + d + c;
   });
   
-  //secret!
-  $(function() {
-    $( window ).konami({
-      cheat: function() {
-        
-        $('#reddit-alien, #overlayCaption, .upvote').removeClass('active');
-        
-        $.blockUI({ 
-          message: $('#overlayContent'), 
-          css: {
-                'width': '960px',
-                'color':'#fff',
-                'background': 'none',
-                'border':'none',
-                'margin-left':'-480px',
-                left:'50%',
-                top:'50%',
-                'margin-top':'-240px',
-                cursor:'default'
-               },
-          onBlock: function() { 
-            init();
-            disable_scroll();
-          },
-          overlayCSS:  { 
-            opacity:0.9, 
-            cursor:'default' 
-          },
-        }); 
-
-        
-        $('#overlayClose, #reddit-alien').click(function(){
-          $('#reddit-alien, #overlayCaption, .upvote').addClass('active');
-          setTimeout(function(){
-            $.unblockUI();
-            enable_scroll();
-          },3500);
-        });        
-      } // end cheat
-    });
-  });
+  //secret! snoo!
+//  $(function() {
+//    $( window ).konami({
+//      cheat: function() {
+//        
+//        $('#reddit-alien, #overlayCaption, .upvote').removeClass('active');
+//        
+//        $.blockUI({ 
+//          message: $('#overlayContent'), 
+//          css: {
+//                'width': '960px',
+//                'color':'#fff',
+//                'background': 'none',
+//                'border':'none',
+//                'margin-left':'-480px',
+//                left:'50%',
+//                top:'50%',
+//                'margin-top':'-240px',
+//                cursor:'default'
+//               },
+//          onBlock: function() { 
+//            init();
+//            disable_scroll();
+//          },
+//          overlayCSS:  { 
+//            opacity:0.9, 
+//            cursor:'default' 
+//          },
+//        }); 
+//
+//        
+//        $('#overlayClose, #reddit-alien').click(function(){
+//          $('#reddit-alien, #overlayCaption, .upvote').addClass('active');
+//          setTimeout(function(){
+//            $.unblockUI();
+//            enable_scroll();
+//          },3500);
+//        });        
+//      } // end cheat
+//    });
+//  });
   //init();
 });
 
