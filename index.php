@@ -66,7 +66,7 @@
       <section class="module content" id="section_mission" data-title="Objectives">
         <div class="colorbacker"></div>
         <div class="container about">
-          <h2>My Objectives:</h2>
+          <h2>Professional Objectives:</h2>
           <ul>
             <li class="watchpos">To design, implement, and improve web/application/mobile interfaces, making the experience both intuitive and memorable for end users</li>
             <li class="watchpos">To take advantage of the new and exciting technologies and practices to make the processes of design, development, and testing all integrate smoothly</li>
