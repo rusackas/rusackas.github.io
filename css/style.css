@@ -312,9 +312,31 @@ section.module.parallax h1 {
 
 #section_future {
   padding: 70px 0; }
-
-#section_future p {
-  line-height: 42px; }
+  #section_future ol {
+    counter-reset: goal-counter;
+    position: relative; }
+  #section_future li {
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 20px;
+    padding-left: 60px;
+    padding-top: 10px;
+    border-top: 2px solid #ff6600;
+    border-top: 2px solid rgba(255, 128, 0, 0.8); }
+  #section_future li:before {
+    counter-increment: goal-counter;
+    content: counter(goal-counter,upper-roman);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #ff6600;
+    background-color: rgba(255, 128, 0, 0.8); }
 
 section.module.parallax h1.offscreen_vert {
   /*  left:-6000px;*/
@@ -855,7 +877,7 @@ section.module .coverflow-text h3 {
   section.module.parallax {
     padding: 10px; }
 
-  #section_future p {
+  #section_future li {
     font-size: 14px;
     line-height: 21px; }
 

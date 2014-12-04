@@ -262,12 +262,14 @@
 
       <section class="module content" id="section_future" data-title="Onward...">
         <div class="container">
-          <h2>And for my next trick...</h2>
-          <p>
-            I'm continually enamored with all the possibilities of CSS3 and HTML5 paired with <a href="http://jquery.com/">jQuery</a>. CSS3's quickly growing support in evergreen browsers is allowing for rapid progress in the design and development of user interfaces, with a TON of icing on top. Browser performance issues (and troubleshooting them) are a topic of much of my research lately. Even making this site scroll smoothly meant making compromises with the whiz-bang features.</p>
-          <p>I've been re-building and evoving my front-end tool quiver lately, too. My new favorite front-end IDE, <a href="http://brackets.io/?lang=en">Brackets</a>, along with <a href="">CodeKit</a> adding in support for <a href="http://bower.io/">Bower</a>, <a href="http://sass-lang.com/">SASS</a>, and minification, are making it fun and easy to implement various techniques. It's exciting to see vendor previxing slip behind the curtain, and disappearing, while the moving parts neede to build sites become more plug-and-play.</p>
-          <p>On the frontier, I'm hoping to work more with <a href="http://webcomponents.org/">Web Components</a> (and related polyfills via <a href="https://www.polymer-project.org/">Polymer</a>). I'm also just getting my feet wet with <a href="http://angularjs.org/">AngularJS</a>, which looks like a lot of fun. I've been at this game a long time, and I'm always amazed that the tools and techniques used in building the web are keeping pace with the broader sociological impact it's making. The web is what we make of it, and it's  exciting to be at a point where we can do nearly <i>anything</i> with it..
-          </p>
+          <h2>And for my next trick(s)...</h2>
+          <ol>
+            <li>I'm still addicted to the DOM, and in love with with all the possibilities of CSS3 and HTML5 paired with <a href="http://jquery.com/">jQuery</a>. CSS3's quickly growing support in evergreen browsers is allowing new ways to design, prototype, and develop user interfaces rapidly, and with plenty of icing. Browser performance issues (and troubleshooting them) are a related topic comprising much of my research lately.</li>
+          <li>I've been re-building and evoving my front-end tool quiver lately, too. My new favorite front-end IDE, <a href="http://brackets.io/?lang=en">Brackets</a>, along with <a href="">CodeKit</a> adding in support for <a href="http://bower.io/">Bower</a>, <a href="http://sass-lang.com/">SASS</a>, and minification, are making it fun and easy to implement various techniques. It's exciting to see vendor previxing slip behind the curtain, and disappearing, while the moving parts neede to build sites become more plug-and-play.</li>
+            <li>I'm hoping to work more with <a href="http://webcomponents.org/">Web Components</a> (and related polyfills via <a href="https://www.polymer-project.org/">Polymer</a>). You'll be seeing more of them here, as I intend for this (brand new) site to be a bit of a test bed for new technologoes.</li>
+            <li>I'm starting to play more with <a href="http://angularjs.org/">AngularJS</a>, which is starting to become a lot of fun. I've been at this game a long time, but tools like this make it an exciting time to be in web design/development.</li>
+            <li>This site has been allowing me to play with some parallax-y toys, which have been hit or miss due to browser performance issues. It's given me the excuse to think up new ways to approach it, and I'm in the process of turning that approach into a new jQuery plugin, coming soon to a GitHub repo near you.</li>
+          </ol>
         </div>
       </section>
 
@@ -294,7 +296,7 @@
           </ul>
         </aside>
         <aside>
-          <a href="EvanRusackas_Resume_CV.pdf" target="_blank" class="file"><img alt="Download Résumé &amp; CV" src="img/file_icon.png" width="100" height="121" /><span class="download">Download Résumé</span></a>
+          <a href="EvanRusackas_Resume_CV.pdf" target="_blank" class="file"><img alt="Download PDF Résumé &amp; CV" src="img/file_icon.png" width="100" height="121" /><span class="download">PDF Résumé &amp; CV</span></a>
         </aside>
       </div>
       <div class="copyright">
