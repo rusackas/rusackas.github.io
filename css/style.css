@@ -235,7 +235,7 @@ section.module:last-child {
 
 section.module h2 {
   margin-bottom: 10px;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
   font-size: 32px; }
 
 section.module p {
@@ -277,7 +277,7 @@ section.module.parallax h1 {
   text-shadow: 3px 3px 20px #000; }
 
 #section_recent h2 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
   font-size: 32px; }
 
 /*
@@ -336,7 +336,8 @@ section.module.parallax h1 {
     color: white;
     text-align: center;
     background-color: #ff6600;
-    background-color: rgba(255, 128, 0, 0.8); }
+    background-color: rgba(255, 128, 0, 0.8);
+    font-family: "Cinzel Decorative", cursive; }
 
 section.module.parallax h1.offscreen_vert {
   /*  left:-6000px;*/
@@ -560,7 +561,7 @@ section.module.parallax-4 {
 .skillheader {
   height: 40px;
   line-height: 40px;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
   font-size: 30px; }
 
 .skills ul {

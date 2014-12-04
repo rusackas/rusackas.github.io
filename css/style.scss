@@ -1,3 +1,6 @@
+$display-font: 'Cinzel Decorative', cursive;
+$copy-font: "Raleway", sans-serif;
+
 /* ============================================================
   RESET - http://meyerweb.com/eric/tools/css/reset/
 ============================================================ */
@@ -92,7 +95,7 @@ table {
 body {
   background-color: #b4b4b4;
   color: #787878;
-  font-family: "Raleway", sans-serif;
+  font-family: $copy-font;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -273,7 +276,7 @@ section.module:last-child {
 }
 section.module h2 {
   margin-bottom: 10px;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: $display-font;
   font-size: 32px;
 }
 section.module p {
@@ -315,7 +318,7 @@ section.module.parallax h1 {
   text-shadow: 3px 3px 20px #000;
 }
 #section_recent h2{
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: $display-font;
   font-size: 32px;
 }
 /*
@@ -378,6 +381,7 @@ section.module.parallax h1 {
     text-align: center;
     background-color:#ff6600;
     background-color:rgba(255,128,0,.8);
+    font-family: $display-font;
   }
 }
 //section.module.parallax h1.offlow {
@@ -603,7 +607,7 @@ section.module.parallax-4 {
 .skillheader{
   height: 40px;
   line-height: 40px;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: $display-font;
   font-size: 30px;
 }
 .skills ul{
