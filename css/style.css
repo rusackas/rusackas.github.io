@@ -336,8 +336,7 @@ section.module.parallax h1 {
     color: white;
     text-align: center;
     background-color: #ff6600;
-    background-color: rgba(255, 128, 0, 0.8);
-    font-family: "Cinzel Decorative", cursive; }
+    background-color: rgba(255, 128, 0, 0.8); }
 
 section.module.parallax h1.offscreen_vert {
   /*  left:-6000px;*/
