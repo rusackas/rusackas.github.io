@@ -296,7 +296,10 @@
           </ul>
         </aside>
         <aside>
-          <a href="EvanRusackas_Resume_CV.pdf" target="_blank" class="file"><img alt="Download PDF Résumé &amp; CV" src="img/file_icon.png" width="100" height="121" /><span class="download">PDF Résumé &amp; CV</span></a>
+            
+            <a href="EvanRusackas_Resume.pdf" target="_blank" class="file"><span class="download"><img alt="Download PDF Résumé" src="img/file_icon.png" width="25" height="30" />Résumé (1pg, PDF)</span></a>
+            <br />
+            <a href="EvanRusackas_Resume_CV.pdf" target="_blank" class="file"><span class="download"><img alt="Download PDF Résumé &amp; CV" src="img/file_icon.png" width="25" height="30" />Résumé &amp; CV (5pgs, PDF)</span></a>
         </aside>
       </div>
       <div class="copyright">
