@@ -32,7 +32,7 @@ $(function () {
   
   var windowheight=$(window).height();
   
-
+  $.whatwhere('body .watchpos, section');
 
   //jQuery
   $(window).on('DOMContentLoaded load resize scroll', function(){
@@ -47,7 +47,7 @@ $(function () {
       headerlogo_bottom.removeClass('barred');
     }
     
-    $.whatwhere('body .watchpos, section');
+    //$.whatwhere('body .watchpos, section');
     
     
     

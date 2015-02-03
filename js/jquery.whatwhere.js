@@ -1,11 +1,12 @@
 (function ( $ ) {
- 
+
   $.whatwhere = function( el, options ) {
+    $(window).on('DOMContentLoaded load resize scroll', function(){
       //set default options
       var settings = $.extend({
         // These are the defaults.
         findVert: true,
-        findHoriz:true
+        findHoriz:false
       }, options );
       
       //adjusting setings if correct options are passed in
@@ -115,20 +116,20 @@
             $this.addClass('onfromright');
           } else $this.removeClass('onfromright');
         }
-        if(settings.findVert && settings.findHoriz){
-          var screenstatus = locateVertHoriz(rect);
-          if (screenstatus == 'onscreen') {
-            $this.addClass('onscreen_horiz');
-          } else $this.removeClass('onscreen_horiz');
-          if (screenstatus == 'offscreen_horiz') {
-            $this.addClass('offscreen');
-          } else $this.removeClass('offscreen_horiz');
-          if (screenstatus == 'overflowing_horiz') {
-            $this.addClass('overflowing_horiz');
-          } else $this.removeClass('overflowing_horiz');
-        }
+//        if(settings.findVert && settings.findHoriz){
+//          var screenstatus = locateVertHoriz(rect);
+//          if (screenstatus == 'onscreen') {
+//            $this.addClass('onscreen_horiz');
+//          } else $this.removeClass('onscreen_horiz');
+//          if (screenstatus == 'offscreen_horiz') {
+//            $this.addClass('offscreen');
+//          } else $this.removeClass('offscreen_horiz');
+//          if (screenstatus == 'overflowing_horiz') {
+//            $this.addClass('overflowing_horiz');
+//          } else $this.removeClass('overflowing_horiz');
+//        }
       }); 
- 
+    });
   };
  
 }( jQuery ));
