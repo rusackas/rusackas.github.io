@@ -1,6 +1,6 @@
 (function ( $ ) {
 
-  $.whatwhere = function( el, options ) {
+  $.scrolltracker = function( el, options ) {
     $(window).on('DOMContentLoaded load resize scroll', function(){
       //set default options
       var settings = $.extend({

@@ -12,7 +12,7 @@
 // @codekit-no-prepend "../bower_components/easeljs/lib/easeljs-NEXT.min.js"
 // @codekit-no-prepend "../bower_components/tweenjs/src/Tween.js"
 // @codekit-prepend "CSSPlugin.js"
-// @codekit-prepend "jquery.whatwhere.js"
+// @codekit-prepend "jquery.scrolltracker.js"
 // @codekit-prepend "coverflow.js"
 
 //  <script type="text/javascript" src="http://www.createjs.com/Demos/TweenJS/assets/easeljs-NEXT.min.js"></script>
@@ -32,7 +32,7 @@ $(function () {
   
   var windowheight=$(window).height();
   
-  $.whatwhere('body .watchpos, section');
+  $.scrolltracker('body .watchpos, section');
 
   //jQuery
   $(window).on('DOMContentLoaded load resize scroll', function(){
@@ -47,8 +47,7 @@ $(function () {
       headerlogo_bottom.removeClass('barred');
     }
     
-    //$.whatwhere('body .watchpos, section');
-    
+    //$.scrolltracker('body .watchpos, section');
     
     
     //update nav to highlight highest current onscreen item
