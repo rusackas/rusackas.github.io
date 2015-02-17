@@ -1,0 +1,28 @@
+{
+  "name": "scrolltracker",
+  "main": [
+    "./jquery.scrolltracker.js"
+  ],
+  "ignore": [
+    "README*",
+    "LICENSE*",
+    ".git*",
+    "*bower.json",
+    "*jquery.json",
+    "index*",
+    "config.codekit"
+  ],
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "homepage": "https://github.com/rusackas/jquery-scrolltracker",
+  "_release": "c42c64fe26",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c42c64fe26cc49b7a9a87d09cea89b425f91914d"
+  },
+  "_source": "git://github.com/rusackas/jquery-scrolltracker.git",
+  "_target": "*",
+  "_originalSource": "scrolltracker"
+}

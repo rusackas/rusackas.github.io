@@ -4,6 +4,7 @@
 // @codekit-prepend "../bower_components/tipsy/src/javascripts/jquery.tipsy.js"
 // @codekit-prepend "../bower_components/colorbox/jquery.colorbox-min.js"
 // @codekit-prepend "../bower_components/animatescroll/animatescroll.min.js"
+// @codekit-prepend "../bower_components/scrolltracker/jquery.scrolltracker.js"
 // @codekit-no-prepend "../bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"
 // @codekit-no-prepend "../bower_components/stellar/jquery.stellar.min.js"
 // @codekit-no-prepend "../bower_components/konami-code/src/jquery.konami.min.js"
@@ -12,7 +13,6 @@
 // @codekit-no-prepend "../bower_components/easeljs/lib/easeljs-NEXT.min.js"
 // @codekit-no-prepend "../bower_components/tweenjs/src/Tween.js"
 // @codekit-prepend "CSSPlugin.js"
-// @codekit-prepend "jquery.scrolltracker.js"
 // @codekit-prepend "coverflow.js"
 
 //  <script type="text/javascript" src="http://www.createjs.com/Demos/TweenJS/assets/easeljs-NEXT.min.js"></script>

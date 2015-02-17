@@ -1,0 +1,16 @@
+{
+  "name": "scrolltracker",
+  "version": "1.0.0",
+  "main": [ "./jquery.scrolltracker.js" ],
+  "ignore":
+  [
+    "README*",
+    "LICENSE*",
+    ".git*",
+    "*bower.json",
+    "*jquery.json",
+    "index*",
+    "config.codekit"
+  ],
+  "dependencies": { "jquery": "latest" }
+}
