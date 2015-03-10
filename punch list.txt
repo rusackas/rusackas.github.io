@@ -1,0 +1,23 @@
+Add jQuery plugin to portfolio
+
+Add what's new mini blog
+
+Revamp skills bullets to be simpler/prettier/shorter
+
+Add two axis bubble graph to objectives section with like/dislike, learning/mastered axes and (maybe) bubble size for years experience
+
+Add twitter ticker?
+
+Add logos section at bottom, something like: http://i.imgur.com/NTiJN3g.png
+
+Header typography re-do… add some pink/orange, like the right img here: http://i.imgur.com/1LuwQx0.jpg
+
+Change portfolio section to flippable/zoomable "cards" and make them a polymer element.
+
+Re-do Beer Citizen case study using current portfolio slideshow, or something else.
+
+More ideas: https://www.themuse.com/advice/the-35-best-personal-websites-weve-ever-seen
+
+Rethink menu, with icons, always sticky at top so intro area doesn't have to transition.
+
+re-introduce parallax?
