@@ -19,7 +19,7 @@
 -->
   <link rel="stylesheet" href="css/style.css">
 
-  
+
   <!-- js -->
   <script src="//cdn.optimizely.com/js/2559030160.js"></script>
   <script src="js/min/scripts-min.js"></script>
@@ -38,18 +38,18 @@
 </head>
 
 <body>
-  
-<?php 
+
+<?php
   $launched = true;
   if($launched == true || $_SERVER['HTTP_HOST'] == 'localhost' || $_REQUEST['preview'] == 'yes') {
 ?>
-  
+
 <!--
 <div class="horizon scroll"></div>
 <div class="middle scroll"></div>
 <div class="front scroll"></div>
 -->
-  
+
 <div class="wrapper">
   <main>
       <section class="module parallax parallax-1 watchpos" id="section_intro" data-title="Intro" data-stellar-background-ratio="0.2">
@@ -131,28 +131,28 @@
         <div class="container">
           <h2>Sample Projects</h2>
           <div class="sp-slideshow">
-			
+
 				<input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
 				<label for="button-1" class="button-label-1"></label>
-				
+
 				<input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
 				<label for="button-2" class="button-label-2"></label>
-				
+
 				<input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
 				<label for="button-3" class="button-label-3"></label>
-				
+
 				<input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
 				<label for="button-4" class="button-label-4"></label>
-				
+
 				<input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
 				<label for="button-5" class="button-label-5"></label>
-				
+
 				<label for="button-1" class="sp-arrow sp-a1"></label>
 				<label for="button-2" class="sp-arrow sp-a2"></label>
 				<label for="button-3" class="sp-arrow sp-a3"></label>
 				<label for="button-4" class="sp-arrow sp-a4"></label>
 				<label for="button-5" class="sp-arrow sp-a5"></label>
-				
+
 				<div class="sp-content">
 					<div class="sp-parallax-bg"></div>
 					<ul class="sp-slider clearfix">
@@ -236,7 +236,7 @@
                       </li>
 					</ul>
 				</div><!-- sp-content -->
-				
+
 			</div><!-- sp-slideshow -->
         </div>
       </section>
@@ -280,8 +280,8 @@
       <div class="asides clearfix">
         <aside>
           Evan Rusackas<br />
-          2948 20th St, #101<br />
-          San Francisco, CA 94110<br />
+          <!-- 2948 20th St, #101<br />
+          San Francisco, CA 94110<br /> -->
           415.359.5422 [cell]<br />
           <a href="#"><span id="my-email">please enable javascript to view</span></a>
         </aside>
@@ -296,7 +296,7 @@
           </ul>
         </aside>
         <aside>
-            
+
             <a href="EvanRusackas_Resume.pdf" target="_blank" class="file"><span class="download"><img alt="Download PDF Résumé" src="img/file_icon.png" width="25" height="30" />Résumé (1pg, PDF)</span></a>
             <br />
             <a href="EvanRusackas_Resume_CV.pdf" target="_blank" class="file"><span class="download"><img alt="Download PDF Résumé &amp; CV" src="img/file_icon.png" width="25" height="30" />Résumé &amp; CV (5pgs, PDF)</span></a>
@@ -312,14 +312,14 @@
 
 </div><!-- /#wrapper -->
 
-<?php 
+<?php
   }
   else{
 ?>
   <div align="center" style="-webkit-animation: throb 2s infinite;animation: throb 2s infinite;padding-top:200px;font-size:32px;text-shadow:2px 2px 100px #fff;">Portfolio website launching soon. Please hold...</div>
 <?php
   }
-?>  
+?>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
