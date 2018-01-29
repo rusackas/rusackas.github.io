@@ -39,11 +39,6 @@
 
 <body>
 
-<?php
-  $launched = true;
-  if($launched == true || $_SERVER['HTTP_HOST'] == 'localhost' || $_REQUEST['preview'] == 'yes') {
-?>
-
 <!--
 <div class="horizon scroll"></div>
 <div class="middle scroll"></div>
@@ -312,14 +307,6 @@
 
 </div><!-- /#wrapper -->
 
-<?php
-  }
-  else{
-?>
-  <div align="center" style="-webkit-animation: throb 2s infinite;animation: throb 2s infinite;padding-top:200px;font-size:32px;text-shadow:2px 2px 100px #fff;">Portfolio website launching soon. Please hold...</div>
-<?php
-  }
-?>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
