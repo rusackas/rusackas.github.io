@@ -21,3 +21,5 @@ More ideas: https://www.themuse.com/advice/the-35-best-personal-websites-weve-ev
 Rethink menu, with icons, always sticky at top so intro area doesn't have to transition.
 
 re-introduce parallax?
+
+and more
