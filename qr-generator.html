@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator - Evan Rusackas</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #666;
+            font-weight: 400;
+        }
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+        #qrcode {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #qrcode canvas {
+            border: 4px solid white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .url-display {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 6px;
+            word-break: break-all;
+            font-family: monospace;
+            margin-top: 1rem;
+            color: #666;
+        }
+        .tips {
+            background: #fff9e6;
+            border-left: 4px solid #ffd700;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-radius: 4px;
+        }
+        .tips h3 {
+            margin-top: 0;
+            color: #c7a600;
+        }
+        .tips ul {
+            margin-bottom: 0;
+            color: #666;
+        }
+        .download-btn {
+            background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 QR Code Generator for Tattoo</h1>
+        
+        <div class="form-group">
+            <label for="redirect-type">Redirect Type:</label>
+            <select id="redirect-type">
+                <option value="default">Default (from config)</option>
+                <option value="linkedin">LinkedIn Profile</option>
+                <option value="github">GitHub Profile</option>
+                <option value="resume">Resume PDF</option>
+                <option value="email">Email Contact</option>
+                <option value="custom">Custom URL</option>
+            </select>
+        </div>
+        
+        <div class="form-group" id="custom-url-group" style="display: none;">
+            <label for="custom-url">Custom URL:</label>
+            <input type="url" id="custom-url" placeholder="https://example.com">
+        </div>
+        
+        <div class="form-group">
+            <label for="error-correction">Error Correction Level (Higher = More Resilient):</label>
+            <select id="error-correction">
+                <option value="L">Low (7% correction)</option>
+                <option value="M">Medium (15% correction)</option>
+                <option value="Q">Quartile (25% correction)</option>
+                <option value="H" selected>High (30% correction) - Best for tattoos!</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="size">QR Code Size (pixels):</label>
+            <input type="number" id="size" value="300" min="100" max="500">
+        </div>
+        
+        <button onclick="generateQR()">Generate QR Code</button>
+        <button onclick="downloadQR()" class="download-btn" id="download-btn" style="display: none;">Download PNG</button>
+        
+        <div id="qrcode">
+            <div style="color: #999;">QR code will appear here</div>
+        </div>
+        
+        <div class="url-display" id="url-display" style="display: none;">
+            <strong>QR Code URL:</strong> <span id="final-url"></span>
+        </div>
+        
+        <div class="tips">
+            <h3>💡 Tattoo Tips</h3>
+            <ul>
+                <li><strong>Use High Error Correction</strong> - Tattoos can distort over time, high error correction helps</li>
+                <li><strong>Test Size First</strong> - Print at actual size and test scanning distance</li>
+                <li><strong>Simple is Better</strong> - The permanent URL is <code>https://rusackas.com/qr</code></li>
+                <li><strong>Add Padding</strong> - Ensure your tattoo artist includes white space around the QR code</li>
+                <li><strong>Test Regularly</strong> - You can change where it redirects anytime by editing qr-config.json</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        let currentQRDataUrl = null;
+        
+        document.getElementById('redirect-type').addEventListener('change', function(e) {
+            const customGroup = document.getElementById('custom-url-group');
+            customGroup.style.display = e.target.value === 'custom' ? 'block' : 'none';
+        });
+        
+        function generateQR() {
+            const type = document.getElementById('redirect-type').value;
+            const errorCorrection = document.getElementById('error-correction').value;
+            const size = parseInt(document.getElementById('size').value);
+            
+            let url = 'https://rusackas.com/qr';
+            
+            if (type !== 'default' && type !== 'custom') {
+                url += '?to=' + type;
+            } else if (type === 'custom') {
+                const customUrl = document.getElementById('custom-url').value;
+                if (!customUrl) {
+                    alert('Please enter a custom URL');
+                    return;
+                }
+                // For custom URLs, we'd need to add it to the config
+                alert('Note: Custom URLs need to be added to qr-config.json first');
+                return;
+            }
+            
+            // Clear previous QR code
+            document.getElementById('qrcode').innerHTML = '';
+            
+            // Generate new QR code
+            QRCode.toCanvas(url, {
+                errorCorrectionLevel: errorCorrection,
+                width: size,
+                margin: 2,
+                color: {
+                    dark: '#000000',
+                    light: '#FFFFFF'
+                }
+            }, function (err, canvas) {
+                if (err) {
+                    console.error(err);
+                    alert('Error generating QR code');
+                    return;
+                }
+                
+                document.getElementById('qrcode').appendChild(canvas);
+                currentQRDataUrl = canvas.toDataURL();
+                
+                // Show URL and download button
+                document.getElementById('final-url').textContent = url;
+                document.getElementById('url-display').style.display = 'block';
+                document.getElementById('download-btn').style.display = 'inline-block';
+            });
+        }
+        
+        function downloadQR() {
+            if (!currentQRDataUrl) {
+                alert('Please generate a QR code first');
+                return;
+            }
+            
+            const link = document.createElement('a');
+            link.download = 'qr-tattoo-' + Date.now() + '.png';
+            link.href = currentQRDataUrl;
+            link.click();
+        }
+        
+        // Generate default QR on load
+        window.onload = () => generateQR();
+    </script>
+</body>
+</html>

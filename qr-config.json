@@ -1,0 +1,13 @@
+{
+  "default": {
+    "url": "https://www.linkedin.com/in/evanrusackas",
+    "title": "Evan Rusackas - LinkedIn",
+    "delay": 0
+  },
+  "redirects": {
+    "linkedin": "https://www.linkedin.com/in/evanrusackas",
+    "github": "https://github.com/rusackas",
+    "resume": "/EvanRusackas_Resume.pdf",
+    "email": "mailto:evan@rusackas.com"
+  }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        .message {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            margin: 2rem auto;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .error {
+            background: linear-gradient(135deg, #f5365c 0%, #f56565 100%);
+        }
+        .manual-link {
+            color: white;
+            text-decoration: underline;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+        .debug {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            display: none;
+        }
+        .debug.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redirecting...</h1>
+        <div class="message">Taking you to your destination</div>
+        <div class="spinner"></div>
+        <div id="manual-redirect" style="display: none;">
+            <a href="#" class="manual-link" id="manual-link">Click here if you're not redirected</a>
+        </div>
+        <div class="debug" id="debug"></div>
+    </div>
+
+    <script>
+        async function redirect() {
+            const debugEl = document.getElementById('debug');
+            const showDebug = window.location.search.includes('debug=true');
+            
+            if (showDebug) {
+                debugEl.classList.add('show');
+            }
+
+            function log(message) {
+                console.log(message);
+                if (showDebug) {
+                    debugEl.innerHTML += message + '<br>';
+                }
+            }
+
+            try {
+                // Get URL parameters
+                const urlParams = new URLSearchParams(window.location.search);
+                const target = urlParams.get('to');
+                
+                log('Loading configuration...');
+                
+                // Fetch configuration
+                const response = await fetch('/qr-config.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load configuration');
+                }
+                
+                const config = await response.json();
+                log('Configuration loaded successfully');
+                
+                let redirectUrl;
+                let delay = 0;
+                
+                // Determine redirect URL
+                if (target && config.redirects[target]) {
+                    redirectUrl = config.redirects[target];
+                    log(`Using named redirect: ${target} -> ${redirectUrl}`);
+                } else if (config.default) {
+                    redirectUrl = config.default.url;
+                    delay = config.default.delay || 0;
+                    log(`Using default redirect: ${redirectUrl}`);
+                } else {
+                    throw new Error('No redirect URL configured');
+                }
+                
+                // Update UI
+                document.querySelector('.message').textContent = `Redirecting to ${new URL(redirectUrl).hostname || 'destination'}...`;
+                
+                // Show manual redirect link
+                setTimeout(() => {
+                    document.getElementById('manual-redirect').style.display = 'block';
+                    document.getElementById('manual-link').href = redirectUrl;
+                }, 1000);
+                
+                // Perform redirect
+                setTimeout(() => {
+                    log(`Redirecting to: ${redirectUrl}`);
+                    window.location.href = redirectUrl;
+                }, delay);
+                
+            } catch (error) {
+                console.error('Redirect error:', error);
+                document.body.classList.add('error');
+                document.querySelector('h1').textContent = 'Oops!';
+                document.querySelector('.message').textContent = 'Something went wrong with the redirect.';
+                document.querySelector('.spinner').style.display = 'none';
+                
+                if (showDebug) {
+                    log('ERROR: ' + error.message);
+                }
+                
+                // Fallback to homepage
+                setTimeout(() => {
+                    document.getElementById('manual-redirect').style.display = 'block';
+                    document.getElementById('manual-link').href = '/';
+                    document.getElementById('manual-link').textContent = 'Go to homepage';
+                }, 500);
+            }
+        }
+        
+        // Start redirect process
+        redirect();
+    </script>
+</body>
+</html>
